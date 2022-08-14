@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>freecodeCamp Form from Scratch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name <input required type="text" id="name" placeholder="Enter your name"></label>
+
+      <label id="email-label">Email
+        <input required type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your Email">
+      </label>
+
+      <label id="number-label">Age (optional)
+        <input id="number" type="number" pattern="[0-9]" min="18" max="120" placeholder="Age here">
+      </label>
+<label for="dropdown">Which option best represets your current role?</label>
+      <select id="dropdown">
+        
+        <option disabled selected value="">Select your current role</option>
+        <option value="employed">Full-Time/Part-Time Job</option>
+        <option value="student">Full-Time/Part-Time Student</option>
+        <option value="none">Pefer not to say</option>
+        <option value="alternative">Other</option>
+      </select>
+
+      <fieldset id="RadioGaGa">
+        Would you recommend freeCodeCamp to a friend?
+        <label><input type="radio" name="reccommend" value="yes"> Hell Yeah!
+        </label>
+        <label>
+        <input type="radio" name="reccommend" value="no"> Hell No!
+        </label>
+        <label>
+        <input type="radio" name="reccommend" value="neither"> Stop asking me questions
+        </label>
+      </fieldset >
+
+      <fieldset id="checkboxes">
+        What could be improved on the website?
+        <label>
+        <input type="checkbox" value="front-end">  Front-end Projects
+        </label>
+        <label>
+        <input type="checkbox" value="back-end"> Back-end Projects
+        </label> 
+        <label>
+        <input type="checkbox" value="database"> Database Projects
+        </label>
+        <input type="checkbox" value="challenges"> Challenges
+        </label> 
+        <input type="checkbox" value="vidoes"> Videos
+        </label> 
+        <input type="checkbox" value="wiki"> Wiki page
+        </label>
+        <input type="checkbox" value="forum"> Forum
+        </label>   
+      </fieldset>
+
+      <textarea></textarea>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  
+  </body>
+</html>

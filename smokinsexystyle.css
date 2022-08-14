@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#eeeeee;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Header/nav bar*/
+.header{
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    display:flex;
+    gap: 25px;
+    
+}   
+
+#header-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    font-size: 20px;
+    z-index: 999;
+    
+}
+
+#header-nav a {
+    padding: 10px 25px;
+    text-decoration: none;
+    
+    color: #FFF;
+}
+
+#header-nav a#close{
+    display: none;
+}
+
+.header i{
+    padding: 10px 20px;
+    font-size:30px;
+    color: #FFF;
+}
+
+#header-nav .active{
+    color: #2eb7cf;
+}
+
+#mobile{
+    display: none;
+}
+
+/* Project Menu Layout*/
+.main-proj-board{
+    background-color: #2eb7cf;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    color: #FFF;
+    
+}
+
+.project-title{
+    position: absolute;
+    bottom: 80px;
+    left:40px;
+    
+}
+
+.project-title h1{
+    font-size: 40px;
+    
+}
+
+.main-proj-board .project-options{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    
+}
+
+.main-proj-board .project-options, .project-title{
+    margin: 0  5%;
+    
+}
+
+.main-proj-board .project-options div{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    color: #8ddae7;
+    
+}
+
+.main-proj-board .project-options div.active{
+    color: #FFFFFF;
+    border-bottom: 2px solid white;
+    
+}
+
+
+/* Project Display Portion*/
+.project-section{
+    background-color: #FFFFFF;
+    height: 100%;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+.project-section h3{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 350px;
+    justify-content: space-around;
+    gap: 30px;    
+}
+
+/* individual projects*/
+.proj a{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   justify-content: center;
+   text-align: center;
+   box-shadow: 4px 7px 8px -3px rgba(0,0,0,0.52);
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.proj a img{
+    height: 300px;
+}
+
+.proj-des{
+    height: 4.5em;
+}
+
+.proj-des-name{
+    margin: 5%;
+    color: #000000;
+    z-index: 99;
+}
+
+.proj-des-text{
+    position: absolute;
+    background-color: #FFF;
+    height: 0px;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    visibility: hidden;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.proj a:hover .proj-des-text{
+    height: 100px;
+    opacity: 100%;
+    visibility: visible;
+}
+
+.proj a .img-background-amazon{
+    height: 300px;
+    font-family: Arial,sans-serif;
+    background-color: #131A22;
+    color: #FFFFFF;
+}
+
+.proj a img.amazon{
+    padding-top: 80px;
+    height: 20%;
+}
+
+.proj a .img-background-Yale{
+    height: 300px;
+    font-family: "Gotham HTF Light" ,serif;   
+    background-color: #037d8d;
+    color: #FFFFFF;
+}
+
+.proj a span.Yalelogo{
+    display: block;
+    padding-top: 80px;
+    font-family: Gotham HTF Light,serif;
+    font-size: 40px;
+}
+/* Responsive Code*/
+
+@media (max-width: 612px){
+    .header{
+        justify-content: space-between;
+    }
+    #header-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #header-nav a{
+        margin-bottom: 25px;
+    }
+
+    #header-nav.active{
+        right: 0px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #header-nav a#close{
+        display: initial;
+    }
+
+    .project-section {
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    .main-proj-board div.project-options{
+        justify-self: center;
+        max-width: 270px;
+        overflow-x: scroll;
+    }
+    
+    .main-proj-board div.project-options::-webkit-scrollbar{
+        height:10px;
+        width: 20px;
+        background-color: #037d8d;
+    }
+    
+    .main-proj-board div.project-options::-webkit-scrollbar-thumb{
+        background-color: white;
+    }
+}

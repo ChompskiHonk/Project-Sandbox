@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sandbox</title>
+    <link rel="stylesheet" href="smokinsexystyle.css">
+    <script src="https://kit.fontawesome.com/985d935cd4.js"></script>
+
+    
+</head>
+<body>
+    <div class="header">
+        <i class="fa-brands fa-connectdevelop"></i>
+        <div id="header-nav">
+            <a href="#" class="active">Projects</a>
+            <a href="#" >Home</a>
+            <a href="https://github.com/ChompskiHonk/anro4650.github.io" >GitHub</a>
+            <a href="https://www.linkedin.com/in/robert-andrews-746897204/" >LinkedIn</a>
+            <a href="#" id="close"><i class="fas fa-xmark"></i></a>
+        </div> 
+        <div id="mobile">
+            <i id="bars" class="fas fa-outdent"></i>
+        </div>
+    </div>
+
+        <div class="main-proj-board">
+            <div class="proj-board-pos">
+                <div class="project-title"><h1>Projects</h1></div>
+                <div class="project-options">
+                    <!-- Each One will have an OnClick javaScript command 
+                    to show certain projects based on their status-->
+                    <div class="active option" id="all">All</div>
+                    <div class="option" id="finished">Finished</div>
+                    <div class="option" id="incomplete">Incomplete</div>
+                    <div class="option" id="immitation">Immitations</div>
+                    <div class="option" id="abandoned">Abandoned</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h3>Features all the projects that I have worked on as of August 2022.</h3>
+            
+            <div class="project-container">
+
+                <div class="proj all finished">
+                    <a href="All projects/CSSS Color Markers/index.html">
+                        <img src="Project Images/CSSMarkers.png" alt="CSS Markers">
+                        <div class="proj-des">
+                            <div class="proj-des-name">CSS Color Markers</div>
+                            <div class="proj-des-text" >
+                                <p>A website that emphasized using css to display art using various shapes and colors.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all finished">
+                    <a href="All projects/Registration Form/index.html">
+                        <img src="Project Images/RegistrationForm.png" alt="Registration Form">
+                        <div class="proj-des">
+                            <div class="proj-des-name">Registration forms</div>
+                            <div class="proj-des-text" >
+                                <p>An example registration form using html and css.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all incomplete">
+                    <a href="All projects/FollowAlongEcommerceSite/EcomHome.html">
+                        <img  src="Project Images/CaraEcommerce.png" alt="Cara">
+                        <div class="proj-des">
+                            <div class="proj-des-name">Cara</div>
+                            <div class="proj-des-text" >
+                                <p>A customized follow along project that replicatres and e-cmmerce website.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all incomplete immitation">
+                    <a href="All projects/Recreating Amazon/index.html">
+                        <div class="img-background-amazon">
+                            <img class="amazon" src="Project Images/Amazonlogo.png" alt="Amazon Logo">
+                            <p>(the clone)</p>
+                        </div>
+                        <div class="proj-des">
+                            <div class="proj-des-name">Amazon Immitation</div>
+                            <div class="proj-des-text" >
+                                <p>This is an attempt to recreate Amazon's homepage for the sake of improving my front-end development skills.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all incomplete immitation">
+                    <a href="All projects/Yale Medicine Design Study/MainPage.html">
+                        <div class="img-background-Yale">
+                            <span class="Yalelogo"><b>Yale</b>Medicine</span>
+                            <p>(the clone)</p>
+                        </div>
+                        <div class="proj-des">
+                            <div class="proj-des-name">Yale Immitation</div>
+                            <div class="proj-des-text" >
+                                <p>This is an attempt to recreate one of Yale's Article pages in the medical field.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <script src="Action.js"></script>
+</body>
+</html>
