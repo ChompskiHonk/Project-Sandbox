@@ -73,3 +73,86 @@ h1{
   border-top-right-radius: 40% 5%;
   transform: rotate(123deg);
 }
+
+/* da sheepy boi */
+#sheep #eye-pupil{
+  position: absolute;
+  height: 28px;
+  width: 7px;
+  background-color: #000000;
+  left: 383px;
+  top: 75px;
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  border-top-left-radius: 50% 25%;
+  border-top-right-radius: 50% 25%;
+  z-index: 6;
+  transform: rotate(115deg);
+}
+
+#sheep #eye-ball{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-color: #bf3b2e;
+  border-radius: 50%;
+  left: 370px;
+  top: 70px;
+  z-index: 5;
+}
+
+#sheep #head{
+  position: absolute;
+  height: 85px;
+  width: 100px;
+  background-color: #272823;
+  border-radius: 50%;
+  left: 340px;
+  top: 50px;
+  z-index: 4;
+  transform: rotate(70deg);
+}
+
+#sheep #body{
+  position: absolute;
+  height: 130px;
+  width: 180px;
+  background-color: #fffaf5;
+  left: 220px;
+  top: 50px;
+  border-radius: 30%;
+  z-index: 3
+}
+
+#sheep #front-legs{
+  position: absolute;
+  height: 70px;
+  width: 40px;
+  background-color: #272823;
+  left: 360px;
+  top: 150px;
+  border-radius: 30%;
+  transform: rotate(160deg);
+}
+
+#sheep #back-legs{
+  position: absolute;
+  height: 70px;
+  width: 40px;
+  background-color: #272823;
+  left: 220px;
+  top: 150px;
+  border-radius: 30%;
+  transform: rotate(20deg);
+}
+#sheep #tail{
+  position: absolute;
+  height: 50px;
+  width: 40px;
+  background-color: #fffaf5;
+  border-radius: 50%;
+  left: 195px;
+  top: 40px;
+  z-index: 4;
+  transform: rotate(140deg);
+}
