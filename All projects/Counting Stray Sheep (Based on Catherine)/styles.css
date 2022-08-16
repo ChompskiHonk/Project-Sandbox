@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+body{
+  font-family: 'Roboto Condensed', 'sans serif' ;
+  color: white;
+  margin :0;
+  padding: 0;
+  background: rgba(255,157,246,1);
+}
+h1{
+  margin :0;
+  padding: 0;
+}
+#stage{
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(233,38,137,1) 50%, rgba(126,12,70,1) 74%, rgba(0,0,0,1) 92%);
+}
+
+/* where all the drawing magic hapens:) */
+#canvas{
+  position: relative;
+}
+
+/* the fence art */
+#base1{
+  position: absolute;
+  height: 150px;
+  width: 35px;
+  background-color: #c96302;
+  left: 490px;
+  top: 170px;
+  border-bottom-left-radius: 40% 5%;
+  border-bottom-right-radius: 40% 5%;
+  border-top-left-radius: 40% 5%;
+  border-top-right-radius: 40% 5%;
+}
+#base2{
+  position: absolute;
+  height: 180px;
+  width: 42px;
+  background-color: #c96302;
+  left: 550px;
+  top: 170px;
+  border-bottom-left-radius: 40% 5%;
+  border-bottom-right-radius: 40% 5%;
+  border-top-left-radius: 40% 5%;
+  border-top-right-radius: 40% 5%;
+}
+
+#support1{
+  position: absolute;
+  height: 50px;
+  width: 29.4px;
+  background-color: #b95b02;
+  left: 515px;
+  top: 195px;
+  border-bottom-left-radius: 40% 35%;
+  border-bottom-right-radius: 40% 35%;
+  border-top-left-radius: 40% 5%;
+  border-top-right-radius: 40% 5%;
+  transform: rotate(103deg );
+}
+#support2{
+  position: absolute;
+  height: 70px;
+  width: 29.4px;
+  background-color: #b95b02;
+  left: 520px;
+  top: 250px;
+  border-bottom-left-radius: 40% 25%;
+  border-bottom-right-radius: 40% 25%;
+  border-top-left-radius: 40% 5%;
+  border-top-right-radius: 40% 5%;
+  transform: rotate(123deg);
+}
