@@ -77,11 +77,11 @@ h1{
 /* da sheepy boi */
 #sheep #eye-pupil{
   position: absolute;
-  height: 28px;
-  width: 7px;
+  height: 15px;
+  width: 5px;
   background-color: #000000;
-  left: 383px;
-  top: 75px;
+  left: 413px;
+  top: 98px;
   border-bottom-left-radius: 50% 25%;
   border-bottom-right-radius: 50% 25%;
   border-top-left-radius: 50% 25%;
@@ -92,12 +92,12 @@ h1{
 
 #sheep #eye-ball{
   position: absolute;
-  height: 35px;
-  width: 35px;
+  height: 20px;
+  width: 20px;
   background-color: #bf3b2e;
   border-radius: 50%;
-  left: 370px;
-  top: 70px;
+  left: 405px;
+  top: 95px;
   z-index: 5;
 }
 
@@ -108,9 +108,9 @@ h1{
   background-color: #272823;
   border-radius: 50%;
   left: 340px;
-  top: 50px;
-  z-index: 4;
-  transform: rotate(70deg);
+  top: 75px;
+  z-index: 3;
+  
 }
 
 #sheep #body{
@@ -155,4 +155,66 @@ h1{
   top: 40px;
   z-index: 4;
   transform: rotate(140deg);
+}
+#horns{
+  position: relative;
+}
+#horns #part1{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset -9px 15px #88837c;
+  left: 349px;
+  top: 57px;
+  z-index: 6;
+}
+#horns #part2{
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset 9px 12px #88837c;/*original color = #88837c */
+  left: 350px;
+  top: 59px;
+  z-index: 6;
+  
+}
+#horns #part2{
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset 9px 12px #88837c;/*original color = #88837c */
+  left: 350px;
+  top: 59px;
+  z-index: 6;
+  
+}
+#horns #part3{
+  position: absolute;
+  height: 45px;
+  width: 41px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset 12px -15px #88837c, inset 16px 10px #88837c;/*original color = #88837c */
+  left: 352px;
+  top: 61px;
+  z-index: 6;
+  
+}
+#horns #part4{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset -14px -5px #88837c;/*original color = #88837c */
+  left: 368px;
+  top: 80px;
+  z-index: 6;
+  
 }
