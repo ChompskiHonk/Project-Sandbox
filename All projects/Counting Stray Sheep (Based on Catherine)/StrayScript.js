@@ -3,11 +3,16 @@ window.addEventListener("load", () => {
   function time(){
     var curTime = new Date();
     var hour = "";
+    var min = "";
     var sec = "";
     var p = "";
     if (curTime.getSeconds() < 10){
       sec = "0"+curTime.getSeconds();
     } else sec += ""+curTime.getSeconds();
+    
+    if (curTime.getMinutes() < 10){
+      min = "0"+curTime.getMinutes();
+    } else min += ""+curTime.getMinutes();
     
     if ((("0"+curTime.getHours()+1).slice(-2)) >= 12){
       p = "PM";
@@ -17,7 +22,7 @@ window.addEventListener("load", () => {
       let h = curTime.getHours() - 12;
       hour = ""+h;
     }else hour = ""+curTime.getHours();
-    document.getElementById("SpookyTime").innerHTML = hour + " : " + curTime.getMinutes() + " : "+ sec + " : "+ curTime.getMilliseconds() + " "+ p;
+    document.getElementById("SpookyTime").innerHTML = hour + " : " + min + " : "+ sec + " : "+ curTime.getMilliseconds() + " "+ p;
     setTimeout(time, 10);
   }
 });
