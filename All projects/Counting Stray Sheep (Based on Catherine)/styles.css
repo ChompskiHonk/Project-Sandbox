@@ -21,6 +21,9 @@ h1{
   position: relative;
 }
 
+.hidden{
+  display: none;
+}
 /* the fence art */
 #base1{
   position: absolute;
@@ -75,13 +78,14 @@ h1{
 }
 
 /* da sheepy boi */
-#sheep #eye-pupil{
+
+#eye-pupil{
   position: absolute;
-  height: 15px;
-  width: 5px;
+  height: 8px;
+  width: 4px;
   background-color: #000000;
-  left: 413px;
-  top: 98px;
+  left: 406px;
+  top: 115px;
   border-bottom-left-radius: 50% 25%;
   border-bottom-right-radius: 50% 25%;
   border-top-left-radius: 50% 25%;
@@ -90,44 +94,44 @@ h1{
   transform: rotate(115deg);
 }
 
-#sheep #eye-ball{
+#eye-ball{
   position: absolute;
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 10px;
   background-color: #bf3b2e;
   border-radius: 50%;
-  left: 405px;
-  top: 95px;
+  left: 403px;
+  top: 110px;
   z-index: 5;
 }
 
-#sheep #head{
+#head{
   position: absolute;
-  height: 85px;
+  height: 65px;
   width: 100px;
   background-color: #272823;
-  border-radius: 50%;
-  left: 340px;
-  top: 75px;
+  border-radius: 35%;
+  left: 330px;
+  top: 85px;
   z-index: 3;
-  
+  transform: rotate(50deg);
 }
 
-#sheep #body{
+#body{
   position: absolute;
-  height: 130px;
+  height: 150px;
   width: 180px;
   background-color: #fffaf5;
   left: 220px;
   top: 50px;
-  border-radius: 30%;
-  z-index: 3
+  border-radius: 45%;
+  z-index: 3;
 }
 
-#sheep #front-legs{
+#front-legs{
   position: absolute;
-  height: 70px;
-  width: 40px;
+  height: 50px;
+  width: 25px;
   background-color: #272823;
   left: 360px;
   top: 150px;
@@ -135,29 +139,31 @@ h1{
   transform: rotate(160deg);
 }
 
-#sheep #back-legs{
+#back-legs{
   position: absolute;
-  height: 70px;
-  width: 40px;
+  height: 50px;
+  width: 25px;
   background-color: #272823;
-  left: 220px;
+  left: 240px;
   top: 150px;
   border-radius: 30%;
   transform: rotate(20deg);
 }
-#sheep #tail{
+#tail{
   position: absolute;
-  height: 50px;
+  height: 30px;
   width: 40px;
   background-color: #fffaf5;
   border-radius: 50%;
-  left: 195px;
-  top: 40px;
+  left: 220px;
+  top: 50px;
   z-index: 4;
-  transform: rotate(140deg);
+  transform: rotate(150deg);
 }
 #horns{
-  position: relative;
+  position: absolute;
+  left: -0px;
+  top: 15px;
 }
 #horns #part1{
   position: absolute;
@@ -165,56 +171,34 @@ h1{
   width: 60px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: inset -9px 15px #88837c;
-  left: 349px;
+  box-shadow: inset -9px 15px #88837c, inset 10px 10px #88837c, inset 5px 19px #88837c;
+  left: 341px;
   top: 57px;
+  transform: rotate(-30deg);
   z-index: 6;
 }
 #horns #part2{
   position: absolute;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: inset 9px 12px #88837c;/*original color = #88837c */
+  box-shadow: inset 9px -15px #88837c,inset -3px -15px #88837c, inset 17px -9px #88837c;
   left: 350px;
-  top: 59px;
+  top: 77px;
+  transform: rotate(-60deg);
   z-index: 6;
-  
 }
-#horns #part2{
+
+/* movement points for the sheep*/
+#sheep{
   position: absolute;
-  height: 45px;
-  width: 45px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: inset 9px 12px #88837c;/*original color = #88837c */
-  left: 350px;
-  top: 59px;
-  z-index: 6;
-  
 }
-#horns #part3{
+/* Code above will move the ENTIRE SHEEP (Keep in mind)*/
+#head-pivot{
   position: absolute;
-  height: 45px;
-  width: 41px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: inset 12px -15px #88837c, inset 16px 10px #88837c;/*original color = #88837c */
-  left: 352px;
-  top: 61px;
-  z-index: 6;
-  
 }
-#horns #part4{
+
+#torso-tail-pivot{
   position: absolute;
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: inset -14px -5px #88837c;/*original color = #88837c */
-  left: 368px;
-  top: 80px;
-  z-index: 6;
-  
 }
