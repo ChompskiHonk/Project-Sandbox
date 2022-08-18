@@ -20,8 +20,14 @@
                 <span>Background Color: <span id="color">none</span></span>
                 
             </div>
-            <span>Flip the switch</span>
+            <span id="prompt">Flip the switch</span>
             <div id="canvas">
+              <div id="switch-panel">
+                <div id="inner-outline">
+                  <div id="on" class="pressed"></div> <!--This will choose a random color -->
+                  <div id="off" class="unpressed"></div><!-- This will turn the background back to the default color-->
+                </div>
+              </div>
             </div>
         </div>
     
