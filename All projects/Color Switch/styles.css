@@ -43,7 +43,7 @@ body{
     align-items: center;
     background-color: rgb(180, 180, 180);
     color: white;
-    
+    transition: 0.7s ease;
 }
 
 #current-mode.switch #current-color{
@@ -59,7 +59,9 @@ body{
 }
 #current-mode span#prompt{
   margin: 5px;
+  transition: 0.6s ease;
 }
+
 #switch-panel{
   display: flex;
   justify-content: center;
@@ -93,6 +95,8 @@ body{
   border-bottom: none;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 #inner-outline #off{
   width: 80%;
@@ -102,6 +106,8 @@ body{
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 #inner-outline #on.unpressed{
