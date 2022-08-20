@@ -209,7 +209,6 @@ body{
 
 .proj a .img-background-StraySheep{
     height: 300px;
-    background-color: red;
     align-items: center;
 }
 .proj a .img-background-StraySheep #StraySheep{
@@ -221,7 +220,7 @@ body{
 }
 
 .proj a .img-background-ColorSwitch #ColorSwitchPic{
-    width: 300px;
+    height: 300px;
 }
 /* Responsive Code*/
 
