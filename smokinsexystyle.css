@@ -216,7 +216,7 @@ body{
 }
 .proj a .img-background-ColorSwitch{
     height: 300px;
-    background: radial-gradient(white 30%, skyblue 40%, black 60%);
+    background-color: rgb(180, 180, 180);
 }
 
 .proj a .img-background-ColorSwitch #ColorSwitchPic{
