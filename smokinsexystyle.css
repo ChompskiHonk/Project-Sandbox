@@ -205,6 +205,20 @@ body{
     font-family: Gotham HTF Light,serif;
     font-size: 40px;
 }
+
+
+.proj a .img-background-StraySheep{
+    height: 300px;
+    background-color: red;
+    align-items: center;
+}
+.proj a .img-background-StraySheep #StraySheep{
+    width: 300px;
+}
+.proj a .img-background-ColorSwitch{
+    height: 300px;
+    background: radial-gradient(white 30%, skyblue 40%, black 60%);
+}
 /* Responsive Code*/
 
 @media (max-width: 612px){
