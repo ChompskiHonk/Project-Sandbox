@@ -14,7 +14,7 @@ if(onSwitch){
       let cur = colors[i];
       document.querySelector('#current-color #color').innerHTML = cur;
       document.getElementById("current-mode").style.backgroundColor = cur;
-      if(cur == "white", cur == "LightYellow", cur == "Moccasin" || cur == "SpringGreen" || cur == "Yellow" || cur == "MistyRose" || cur == "Snow" || cur == "Cornsilk" || cur == "Lavender" || cur == "PeachPuff") document.getElementById("prompt").style.color = "rgba(0, 0, 0, 0.8)";
+      if(cur == "white"|| cur == "LightYellow"|| cur == "Moccasin" || cur == "SpringGreen" || cur == "Yellow" || cur == "MistyRose" || cur == "Snow" || cur == "Cornsilk" || cur == "Lavender" || cur == "PeachPuff") document.getElementById("prompt").style.color = "rgba(0, 0, 0, 0.8)";
       else document.getElementById("prompt").style.color = "white";
   });
 }
