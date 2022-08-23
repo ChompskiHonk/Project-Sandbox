@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 body{
-  font-family: 'Roboto Condensed', 'sans serif' ;
+  font-family: 'Roboto Condensed', 'sans serif' 
+    ;
   color: white;
   margin :0px auto;
   padding: 0;
-  background: black;
+  background: radial-gradient(circle, rgba(233,38,137,1) 40%, rgba(126,12,70,1) 64%, rgba(0,0,0,1) 82%);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 829px;
+  height: 100vh;
+  overflow-y: hidden;
 }
 h1{
   margin :0;
@@ -13,9 +18,7 @@ h1{
 }
 #stage{
   width: 100%;
-  height: 100vh;
-  background: radial-gradient(circle, rgba(233,38,137,1) 40%, rgba(126,12,70,1) 64%, rgba(0,0,0,1) 82%);
-  
+  height: 476px;
 }
 
 #art{
@@ -132,7 +135,7 @@ h1{
   left: 220px;
   top: 50px;
   border-radius: 45%;
-  z-index: 3;
+  z-index: 4;
 }
 
 #front-legs{
@@ -143,7 +146,6 @@ h1{
   left: 360px;
   top: 150px;
   border-radius: 30%;
-  transform: rotate(160deg);
 }
 
 #back-legs{
@@ -154,7 +156,6 @@ h1{
   left: 240px;
   top: 150px;
   border-radius: 30%;
-  transform: rotate(20deg);
 }
 #tail{
   position: absolute;
@@ -169,8 +170,12 @@ h1{
 }
 #horns{
   position: absolute;
-  left: -0px;
+  left: 1px;
   top: 15px;
+  z-index: 10;
+  animation-name: idle-headmove;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 #horns #part1{
   position: absolute;
@@ -182,7 +187,7 @@ h1{
   left: 341px;
   top: 57px;
   transform: rotate(-30deg);
-  z-index: 6;
+  z-index: 10;
 }
 #horns #part2{
   position: absolute;
@@ -194,18 +199,46 @@ h1{
   left: 350px;
   top: 77px;
   transform: rotate(-60deg);
-  z-index: 6;
+  z-index: 10;
 }
 
+/* Keyframe aniamtions*/
+@keyframes idle-headmove{
+  0%{transform:rotate(0deg);}
+  40%{transform:rotate(0.8deg);}
+  100%{transform:rotate(0deg);}
+  
+}
+
+@keyframes tail-twitch{
+  0%{transform:rotate(0deg);}
+  5%{transform:rotate(1deg);}
+  10%{transform:rotate(0deg);}
+  100%{transform:rotate(0deg);}
+}
 /* movement points for the sheep*/
+
 #sheep{
   position: absolute;
+  left: -90px;
+  bottom: -120px;
+  
 }
 /* Code above will move the ENTIRE SHEEP (Keep in mind)*/
 #head-pivot{
   position: absolute;
+  animation-name: idle-headmove;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  
 }
 
-#torso-tail-pivot{
+
+
+#tail-pivot{
   position: absolute;
+  animation-name: tail-twitch;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  
 }
