@@ -26,3 +26,13 @@ window.addEventListener("load", () => {
     setTimeout(time, 10);
   }
 });
+var counter = 0;
+let button = document.getElementById("jump-button");
+if(button){
+  button.addEventListener("click", () => {
+    document.getElementById("counter").innerHTML = ""+(++counter);
+    /*added a counter to website, now I just have to decide how I want to animate
+    the rest of the application moving forward, so functionally the site is done
+    but I want to add more.*/
+  });
+}
