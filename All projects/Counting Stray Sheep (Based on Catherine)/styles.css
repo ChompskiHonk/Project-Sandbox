@@ -57,6 +57,7 @@ h1{
   border-bottom-right-radius: 40% 5%;
   border-top-left-radius: 40% 5%;
   border-top-right-radius: 40% 5%;
+  z-index:1;
 }
 #base2{
   position: absolute;
@@ -69,6 +70,7 @@ h1{
   border-bottom-right-radius: 40% 5%;
   border-top-left-radius: 40% 5%;
   border-top-right-radius: 40% 5%;
+  z-index: 11;
 }
 
 #support1{
@@ -83,6 +85,7 @@ h1{
   border-top-left-radius: 40% 5%;
   border-top-right-radius: 40% 5%;
   transform: rotate(103deg );
+  z-index:1;
 }
 #support2{
   position: absolute;
@@ -96,6 +99,7 @@ h1{
   border-top-left-radius: 40% 5%;
   border-top-right-radius: 40% 5%;
   transform: rotate(123deg);
+  z-index:1;
 }
 
 /* da sheepy boi */
@@ -233,7 +237,7 @@ h1{
   position: absolute;
   left: -90px;
   bottom: -120px;
-
+  z-index: 5;
 }
 /* Code above will move the ENTIRE SHEEP (Keep in mind)*/
 #head-pivot{
@@ -278,8 +282,8 @@ h1{
   0%{opacity: 1;}
   10%{left:70px;}/*the running start*/
   11%{bottom: -120px;left: 80px;} /*start of the jump */
-  15%{bottom: 30px;left: 200px;}
-  20%{bottom:-120px;left:350px; opacity: 1;}   /*end of the jump*/
+  15%{bottom: 40px;left: 200px;}
+  20%{bottom:-120px;left:360px; opacity: 1;}   /*end of the jump*/
   60%{left:1000px; opacity: 0;} /*run the rest of the way*/
   
   70%{left: -100%; opacity: 0;}
