@@ -34,5 +34,12 @@ if(button){
     /*added a counter to website, now I just have to decide how I want to animate
     the rest of the application moving forward, so functionally the site is done
     but I want to add more.*/
+    document.getElementById("sheep").classList.add("moving-the-sheep");
+    button.disabld = true;
+    setTimeout(function (){
+      document.getElementById("sheep").classList.remove("moving-the-sheep");
+      button.disabld = false;
+    }, 6000);
+    
   });
 }
