@@ -1,289 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-
-body{
-  font-family: 'Roboto Condensed', 'sans serif' 
-    ;
-  color: white;
-  margin :0px auto;
-  padding: 0;
-  background: radial-gradient(circle, rgba(233,38,137,1) 40%, rgba(126,12,70,1) 64%, rgba(0,0,0,1) 82%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 829px;
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  position: relative;
-}
-h1{
-  margin :0;
-  padding: 0;
-}
-
-#Title, #SpookyTime, #counter{
-  font-family: 'Special Elite', cursive;
-}
-
-#stage{
-  width: 100%;
-  height: 476px;
-}
-
-#art{
-  margin: 0px auto;
-}
-
-/* where all the drawing magic hapens:) */
-#canvas{
-  position: relative;
-  
-}
-
-.hidden{
-  display: none;
-}
-/* the fence art */
-#base1{
-  position: absolute;
-  height: 150px;
-  width: 35px;
-  background-color: #c96302;
-  left: 490px;
-  top: 170px;
-  border-bottom-left-radius: 40% 5%;
-  border-bottom-right-radius: 40% 5%;
-  border-top-left-radius: 40% 5%;
-  border-top-right-radius: 40% 5%;
-}
-#base2{
-  position: absolute;
-  height: 180px;
-  width: 42px;
-  background-color: #c96302;
-  left: 550px;
-  top: 170px;
-  border-bottom-left-radius: 40% 5%;
-  border-bottom-right-radius: 40% 5%;
-  border-top-left-radius: 40% 5%;
-  border-top-right-radius: 40% 5%;
-}
-
-#support1{
-  position: absolute;
-  height: 50px;
-  width: 29.4px;
-  background-color: #b95b02;
-  left: 515px;
-  top: 195px;
-  border-bottom-left-radius: 40% 35%;
-  border-bottom-right-radius: 40% 35%;
-  border-top-left-radius: 40% 5%;
-  border-top-right-radius: 40% 5%;
-  transform: rotate(103deg );
-}
-#support2{
-  position: absolute;
-  height: 70px;
-  width: 29.4px;
-  background-color: #b95b02;
-  left: 520px;
-  top: 250px;
-  border-bottom-left-radius: 40% 25%;
-  border-bottom-right-radius: 40% 25%;
-  border-top-left-radius: 40% 5%;
-  border-top-right-radius: 40% 5%;
-  transform: rotate(123deg);
-}
-
-/* da sheepy boi */
-
-#eye-pupil{
-  position: absolute;
-  height: 8px;
-  width: 4px;
-  background-color: #000000;
-  left: 406px;
-  top: 115px;
-  border-bottom-left-radius: 50% 25%;
-  border-bottom-right-radius: 50% 25%;
-  border-top-left-radius: 50% 25%;
-  border-top-right-radius: 50% 25%;
-  z-index: 6;
-  transform: rotate(115deg);
-}
-
-#eye-ball{
-  position: absolute;
-  height: 17px;
-  width: 10px;
-  background-color: #bf3b2e;
-  border-radius: 50%;
-  left: 403px;
-  top: 110px;
-  z-index: 5;
-}
-
-#head{
-  position: absolute;
-  height: 65px;
-  width: 100px;
-  background-color: #272823;
-  border-radius: 35%;
-  left: 330px;
-  top: 85px;
-  z-index: 3;
-  transform: rotate(50deg);
-}
-
-#body{
-  position: absolute;
-  height: 150px;
-  width: 180px;
-  background-color: #fffaf5;
-  left: 220px;
-  top: 50px;
-  border-radius: 45%;
-  z-index: 4;
-}
-
-#front-legs{
-  position: absolute;
-  height: 50px;
-  width: 25px;
-  background-color: #272823;
-  left: 360px;
-  top: 150px;
-  border-radius: 30%;
-}
-
-#back-legs{
-  position: absolute;
-  height: 50px;
-  width: 25px;
-  background-color: #272823;
-  left: 240px;
-  top: 150px;
-  border-radius: 30%;
-}
-#tail{
-  position: absolute;
-  height: 30px;
-  width: 40px;
-  background-color: #fffaf5;
-  border-radius: 50%;
-  left: 220px;
-  top: 50px;
-  z-index: 4;
-  transform: rotate(150deg);
-}
-#horns{
-  position: absolute;
-  left: 1px;
-  top: 15px;
-  z-index: 10;
-  animation-name: idle-headmove;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-#horns #part1{
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: inset -9px 15px #88837c, inset 10px 10px #88837c, inset 5px 19px #88837c;
-  left: 341px;
-  top: 57px;
-  transform: rotate(-30deg);
-  z-index: 10;
-}
-#horns #part2{
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: inset 9px -15px #88837c,inset -3px -15px #88837c, inset 17px -9px #88837c;
-  left: 350px;
-  top: 77px;
-  transform: rotate(-60deg);
-  z-index: 10;
-}
-
-/* Keyframe aniamtions for idle sheep*/
-@keyframes idle-headmove{
-  0%{transform:rotate(0deg);}
-  40%{transform:rotate(0.8deg);}
-  100%{transform:rotate(0deg);}
-  
-}
-
-@keyframes tail-twitch{
-  0%{transform:rotate(0deg);}
-  5%{transform:rotate(1deg);}
-  10%{transform:rotate(0deg);}
-  100%{transform:rotate(0deg);}
-}
-/* movement points for the sheep*/
-
-#sheep{
-  position: absolute;
-  left: -90px;
-  bottom: -120px;
-  
-}
-/* Code above will move the ENTIRE SHEEP (Keep in mind)*/
-#head-pivot{
-  position: absolute;
-  animation-name: idle-headmove;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  
-}
-
-
-
-#tail-pivot{
-  position: absolute;
-  animation-name: tail-twitch;
-  animation-duration:4s;
-  animation-iteration-count: infinite;
-  
-}
-/* Jump Button*/
-#jump-button{
-  position: absolute;
-  top: 450px;
-  left: 330px;
-  height: 50px;
-  width: 200px;
-  font-family: 'Roboto', 'sans serif';
-  color: rgba(233,38,137,1);
-  font-size: 20px;
-  background: none;
-  background-image: url("https://www.onlygfx.com/wp-content/uploads/2019/03/14-white-grunge-brush-stroke-13.png");
- background-repeat: no-repeat;
-  background-size: 250px;
-  background-position: center;
-  border: 1px solid transparent;
-  border-radius: 5%;
-  
-}
-
-/* Jumping animation*/
-@keyframes moving{
-  0%{left:-100%;}/*the running start*/
-  20%{bottom: -120px;left: 80px;} /*start of the jump */
-  25%{bottom: 30px;left: 200px;}
-  30%{bottom:-120px;left:350px;}   /*end of the jump*/
-  100%{left:1800px;} /*run the rest of the way*/
-}
-/* ground pixels = --- ; jump pixels = ---*/
-.moving-the-sheep{
-  animation-name: moving;
-  animation-duration: 7s;
-  animation-timing-function: linear;
+window.addEventListener("load", () => { 
+  time();
+  function time(){
+    var curTime = new Date();
+    var hour = "";
+    var min = "";
+    var sec = "";
+    var p = "";
+    if (curTime.getSeconds() < 10){
+      sec = "0"+curTime.getSeconds();
+    } else sec += ""+curTime.getSeconds();
+    
+    if (curTime.getMinutes() < 10){
+      min = "0"+curTime.getMinutes();
+    } else min += ""+curTime.getMinutes();
+    
+    if ((("0"+curTime.getHours()+1).slice(-2)) >= 12){
+      p = "PM";
+    } else p = "AM";
+    
+    if(curTime.getHours() > 12) {
+      let h = curTime.getHours() - 12;
+      hour = ""+h;
+    }else hour = ""+curTime.getHours();
+    document.getElementById("SpookyTime").innerHTML = hour + " : " + min + " : "+ sec + " : "+ curTime.getMilliseconds() + " "+ p;
+    setTimeout(time, 10);
+  }
+});
+var counter = 0;
+let button = document.getElementById("jump-button");
+if(button){
+  button.addEventListener("click", () => {
+    document.getElementById("counter").innerHTML = ""+(++counter);
+    /*added a counter to website, now I just have to decide how I want to animate
+    the rest of the application moving forward, so functionally the site is done
+    but I want to add more.*/
+    document.getElementById("sheep").classList.add("moving-the-sheep");
+    button.disabld = true;
+    setTimeout(function (){
+      document.getElementById("sheep").classList.remove("moving-the-sheep");
+      button.disabld = false;
+    }, 6000);
+    
+  });
 }
