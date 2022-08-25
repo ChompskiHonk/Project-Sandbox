@@ -185,7 +185,7 @@ h1{
   top: 15px;
   z-index: 10;
   animation-name: idle-headmove;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 #horns #part1{
@@ -239,7 +239,7 @@ h1{
 #head-pivot{
   position: absolute;
   animation-name: idle-headmove;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 
 }
@@ -275,15 +275,18 @@ h1{
 
 /* Jumping animation*/
 @keyframes moving{
-  0%{left:-100%;}/*the running start*/
-  20%{bottom: -120px;left: 80px;} /*start of the jump */
-  25%{bottom: 30px;left: 200px;}
-  30%{bottom:-120px;left:350px;}   /*end of the jump*/
-  100%{left:1800px;} /*run the rest of the way*/
+  0%{opacity: 1;}
+  10%{left:70px;}/*the running start*/
+  11%{bottom: -120px;left: 80px;} /*start of the jump */
+  15%{bottom: 30px;left: 200px;}
+  20%{bottom:-120px;left:350px; opacity: 1;}   /*end of the jump*/
+  60%{left:1000px; opacity: 0;} /*run the rest of the way*/
+  
+  70%{left: -100%; opacity: 0;}
 }
 /* ground pixels = --- ; jump pixels = ---*/
 .moving-the-sheep{
   animation-name: moving;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-timing-function: linear;
 }
