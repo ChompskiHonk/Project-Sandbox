@@ -15,6 +15,7 @@ body{
   max-width: 829px;
   height: 100vh;
   overflow-y: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 h1{
@@ -212,7 +213,7 @@ h1{
   z-index: 10;
 }
 
-/* Keyframe aniamtions*/
+/* Keyframe aniamtions for idle sheep*/
 @keyframes idle-headmove{
   0%{transform:rotate(0deg);}
   40%{transform:rotate(0.8deg);}
@@ -270,4 +271,19 @@ h1{
   border: 1px solid transparent;
   border-radius: 5%;
   
+}
+
+/* Jumping animation*/
+@keyframes moving{
+  0%{left:-100%;}/*the running start*/
+  20%{bottom: -120px;left: 80px;} /*start of the jump */
+  25%{bottom: 30px;left: 200px;}
+  30%{bottom:-120px;left:350px;}   /*end of the jump*/
+  100%{left:1800px;} /*run the rest of the way*/
+}
+/* ground pixels = --- ; jump pixels = ---*/
+.moving-the-sheep{
+  animation-name: moving;
+  animation-duration: 7s;
+  animation-timing-function: linear;
 }
