@@ -39,7 +39,7 @@ if(button){
     setTimeout(function (){
       document.getElementById("sheep").classList.remove("moving-the-sheep");
       button.disabld = false;
-    }, 6000);
+    }, 5000);
     
   });
 }
