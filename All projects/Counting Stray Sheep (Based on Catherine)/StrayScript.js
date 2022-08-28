@@ -30,15 +30,16 @@ var counter = 0;
 let button = document.getElementById("jump-button");
 if(button){
   button.addEventListener("click", () => {
+    
     document.getElementById("counter").innerHTML = ""+(++counter);
     /*added a counter to website, now I just have to decide how I want to animate
     the rest of the application moving forward, so functionally the site is done
     but I want to add more.*/
     document.getElementById("sheep").classList.add("moving-the-sheep");
-    button.disabld = true;
+    button.disabled = true;
     setTimeout(function (){
       document.getElementById("sheep").classList.remove("moving-the-sheep");
-      button.disabld = false;
+      button.disabled = false;
     }, 5000);
     
   });
