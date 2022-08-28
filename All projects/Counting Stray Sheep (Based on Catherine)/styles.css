@@ -277,6 +277,11 @@ h1{
 
 }
 
+#jump-button[disabled]{
+    color: #88837c;
+    transition: .3s ease;
+}
+
 /* Jumping animation*/
 @keyframes moving{
   0%{opacity: 1;}
@@ -291,6 +296,7 @@ h1{
 /* ground pixels = --- ; jump pixels = ---*/
 .moving-the-sheep{
   animation-name: moving;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-timing-function: linear;
 }
+
