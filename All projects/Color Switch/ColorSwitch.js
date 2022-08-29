@@ -25,8 +25,12 @@ if(onSwitch){
       onSwitch.classList.add("unpressed");
     
       offSwitch.classList.remove("unpressed");             
-      offSwitch.classList.add("pressed");
+      offSwitch.classList.add("pressed"); 
+      document.querySelector('#current-color #color').innerHTML = "none";   
+      document.getElementById("current-mode").style.backgroundColor= 'rgb(180, 180, 180)';
     });
+   
+   
     
     
   }
