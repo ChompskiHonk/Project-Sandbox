@@ -2,39 +2,56 @@ body{
     margin: 0;
     padding: 0;
 }
-#mode{
+#bright-mode{
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: 0.5s ease;
     /*add a box shadow */
+  box-shadow: 0px 0px 15px black;
 }
+
+
 /* brightness settings */
-#mode.dark{
-    
+#bright-mode.dark{
+   transition: 0.5s ease;
     background-color: rgb(79, 80, 80);
     color: aliceblue;
 }
-#mode span{
+
+
+#bright-mode span{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
     margin: 0 auto;
+  transition: 0.5s ease;
 }
 
-#mode span.active{
+#bright-mode span.active{
     color:cornflowerblue;
 }
 
-#mode i{
+#bright-mode i{
     margin: 10px;
     align-items: flex-start;
     position: absolute;
     left: 0;
     top: 0;
+    transition: 0.5s ease;
 }
-/* modes */
-#current-mode.switch{
+
+#bright-mode.dark i:hover{
+  color: yellow; 
+}
+/* Mode buttons*/
+#switch, #spectrum{
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+/* Background color title and actual background color*/
+#current-mode{
     width: 100%;
     height: 90vh;
     display: flex;
@@ -46,21 +63,24 @@ body{
     transition: 0.7s ease;
 }
 
-#current-mode.switch #current-color{
+#current-mode #current-color{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.397);
+    text-align: center;  
+  background-color: rgba(0, 0, 0, 0.397);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 8px;
     margin: 10px;
 }
 #current-mode span#prompt{
+  text-align: center;
   margin: 5px;
-  transition: 0.6s ease;
+  transition: 0.2s ease;
 }
+
+/* Color-Switch mode*/
 
 #switch-panel{
   display: flex;
@@ -97,7 +117,7 @@ body{
   border-bottom-right-radius: 0;
   cursor: pointer;
   transition: 0.3s ease;
-  
+ 
   color: rgba(0, 0 ,0, 0.7);
   display: flex;
   justify-content: center;
@@ -113,7 +133,7 @@ body{
   border-top-right-radius: 0;
   cursor: pointer;
   transition: 0.3s ease;
-  
+ 
   color: rgba(0, 0 ,0, 0.7);
   display: flex;
   justify-content: center;
@@ -129,5 +149,62 @@ body{
 #inner-outline #off.unpressed{
   background: linear-gradient(180deg, rgba(227,227,227,1) 9%, rgba(255,255,255,1) 52%);
   box-shadow: inset 0px -5px #cccccc;
-  
+ 
 }
+
+/* Hexi-Spectrum Mode*/
+#rand-button{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding:10px 5px;
+   background-color: rgba(0, 0, 0, 0.397);
+  border: 2px solid transparent;
+  margin: 5px;
+  border-radius: 8%;
+  cursor: pointer;
+ 
+  /* all the code required to make sure the button cannot be seleceted*/
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+ 
+}
+
+
+#the-magic{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+#the-magic span:first-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hext-box{
+  width: 100px;
+  height: 45px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 15%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin-right: 0px;
+}
+
+#setColor{
+  width: 70px;
+  height: 49px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 15%;
+  margin-left: 0px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+/* Either email the code for the Hexi-Spectrum mode in an email or comment the whole html, css and javascript in here...*/
