@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-        <div id="mode" class= "dark">
+     <!--The head of the page that will let user switch between the Color Switch and Hexi-Spectrum modes-->
+        <div id="bright-mode" class= "dark">
             <i class="fa-solid fa-moon"></i>
-            <span class="active">Color Switch</span>
-            <span>Hexi-Sectrum</span>
+            <span id="switch" class="active">Color Switch</span>
+            <span id="spectrum">Hexi-Spectrum</span>
         </div>
-        <div id="current-mode" class="switch">
+  <!-- Will show the current mode that the user is on-->
+        <div id="current-mode">
             <div id="current-color">
                 <span>Background Color: <span id="color">none</span></span>
-                
+               
             </div>
-            <span id="prompt">Flip the switch (Press "on" to continue to change the color of the background; press "off" to reset)</span>
+            <span id="prompt">Flip the switch (Press "on" to continue to change the color of the background; press "off" to reset it)</span>
             <div id="canvas">
               <div id="switch-panel">
                 <div id="inner-outline">
