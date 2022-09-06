@@ -220,6 +220,16 @@ body{
  
 }
 
+#featured-deals{
+  display: flex;
+  gap: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+#featured-deals.first{
+  padding-top: 220px;
+}
+
 /* Featured products boxes */
 #info-box{
   display: flex;
@@ -238,15 +248,39 @@ body{
 
 #picturelinks{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 10px 10px 10px;
+ 
 }
 
 #pic-sec{
   display: flex;
   flex-direction: column;
 }
+
+
+
+#info-box a#info-explore{
+  font-size: 13px;
+  font-weight: bold;
+  color: #007185;
+  text-decoration: none;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+#info-box a#info-explore:hover{
+  text-decoration: underline;
+  color: #c95929;
+}
+
+.img-sec{
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* Types of Featured Products Boxes, 4 link box*/
 
 #info-box.four-boxType #picturelinks div{
@@ -259,26 +293,29 @@ body{
   font-size:12px;
 }
 
-#info-box a#info-explore{
-  font-size: 13px;
-  font-weight: bold;
-  color: #007185;
-  text-decoration: none;
-  margin-left: 10px;
+#info-box.four-boxType.adjust #picturelinks div{
+  width: 151px;
+  height: 144px;
 }
 
-#info-box a#info-explore:hover{
-  text-decoration: underline;
-  color: #c95929;
+
+
+/* Types of Featured Products Boxes, 1 link box*/
+#info-box.one-boxType #picturelinks div{
+  width: 319px;
+  height: 308px;
 }
 
-.img-sec{
-  
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+#info-box.one-boxType a#info-explore{
+  margin: 0 auto 0 0;
+  padding-left: 10px;
 }
 
+#info-box.one-boxType.adjust #picturelinks div{
+  width: 319px;
+  height: 288px;
+}
+/* Images (notation: image -[image box number]-[image number])*/
 #imgbox-1-1{
   background-image: url('https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/ACS/Made_in_Italy/2022/Gateways/09-September/QC-D_BA_Food_186x116._SY116_CB631147173_.jpg');
 }
@@ -293,3 +330,11 @@ body{
 #imgbox-1-4{
   background-image: url('https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/ACS/Made_in_Italy/2022/Gateways/09-September/QC-D_BA_Beauty_186x116._SY116_CB631147457_.jpg');
 }
+#imgbox-2-1{
+  background-image: url('https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/DiscoTec/2022/FF/GW/cc/DT_Fall-favorites_Gateway_Category-Card_Desktop_379x304_V2._SY304_CB611432208_.jpg');
+}
+
+#imgbox-3-1{
+  background-image: url('https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AMAZON_FASHION/2022/journeys/MTcwYjYxZDQt/MTcwYjYxZDQt-N2Q3MzJmODUt-w379._SY304_CB630082778_.jpg');
+}
+
