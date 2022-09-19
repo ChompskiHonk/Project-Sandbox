@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* The line above only serves to remove the default spacing
+that pages seem to have when they are first created (of course it
+will likely vary depending on what you are running your code on,
+but you never know...)*/
+#header{
+  top: 0px;
+  position: sticky;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255); 
+  padding: 10px;
+  box-shadow: 0px 0px 10px 1px black;
+  z-index: 1;
+  
+}
+
+#header #far-right{
+  display: flex;
+  align-items: center;
+}
+
+#header #far-right i{
+  font-size: 25px;
+  padding-right: 10px;
+  color: #f8d4d2;
+}
+
+#header div#title{
+  font-weight: 800;
+  color: #74627c; 
+}
+
+#banner{
+  width: 100%;
+}
+
+figure{
+  width: 100%;
+  margin: 0; /*figure was given a deault margin that had tp be removed as well, not unlike the entire body originally*/
+  position: relative;
+}
+
+img{
+  width: 100%;
+  height:400px;
+}
+
+figcaption{
+  position: absolute;
+  top: 271px;
+  left: 10px;
+  width: 50%;
+  font-weight: bold;
+  color:#fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: fit-content;
+  padding: 5px;
+}
+
