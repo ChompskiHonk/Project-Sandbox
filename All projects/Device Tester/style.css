@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  min-width: 1000px;
+  min-width: 1080px;
 }
 
 #device-nav{
@@ -24,13 +24,70 @@ body{
   color: white;
 }
 
-#the-keyboard{
+#the-magic{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
+#the-keyboard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/*Top keys of key board */
+#keyboard-toprow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  border-top-right-radius: 1% 10%;
+  border-top-left-radius: 1% 10%;
+  border-bottom-right-radius: 1% 10%;
+  border-bottom-left-radius: 1% 10%;
+  margin: 10px;
+  padding: 10px 5px 5px 10px;
+}
+#keyboard-top{
+  list-style: none;
+  background-color: grey;
+  padding: 0;
+  margin:0;
+}
+
+#keyboard-top li{
+  float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.number-lock{
+   margin: 0 5px 5px 0;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+/* bottom row of keyboard*/
+#keyboard-bottom{
+  display: flex;
+  flex-direction: row;
+}
+/* Main Keys*/
 #keyboard {
 margin: 0;
 padding: 10px 5px 5px 10px;
@@ -114,3 +171,69 @@ list-style: none;
  #keyboard .ctrl{
   width: 51px;
 }
+
+/* Right-side of keyboard*/
+#keyboard-rightside{
+  display: flex;
+  flex-direction: column;
+}
+
+#keyboard-adds{
+   list-style: none;
+  background-color: grey;
+  margin: 5px;
+  padding: 10px 5px 5px 10px;
+  border-top-right-radius: 1% 10%;
+  border-top-left-radius: 1% 10%;
+  border-bottom-right-radius: 1% 10%;
+  border-bottom-left-radius: 1% 10%;
+}
+
+#keyboard-adds li{
+  float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+/* Directional Keys (arrows)*/
+#keyboard-adds .delete{
+  clear: left;
+}
+
+#keybaord-directionals{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  background-color: grey;
+  margin: 10px 5px;
+  padding:5px;
+  border-top-right-radius: 1% 10%;
+  border-top-left-radius: 1% 10%;
+  border-bottom-right-radius: 1% 10%;
+  border-bottom-left-radius: 1% 10%;
+}
+
+#keybaord-directionals li{
+  
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#direct-bottom{
+  display: flex;
+  flex-direction: row;
+}
+
