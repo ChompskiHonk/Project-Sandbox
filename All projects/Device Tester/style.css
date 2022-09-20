@@ -184,18 +184,19 @@ list-style: none;
 /* Right-side of keyboard*/
 #keyboard-rightside{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 
 #keyboard-adds{
    list-style: none;
   background-color: grey;
-  margin: 5px;
+  margin: 0px 5px;
   padding: 10px 5px 5px 10px;
-  border-top-right-radius: 1% 10%;
-  border-top-left-radius: 1% 10%;
-  border-bottom-right-radius: 1% 10%;
-  border-bottom-left-radius: 1% 10%;
+  border-top-right-radius: 7% 10%;
+  border-top-left-radius: 7% 10%;
+  border-bottom-right-radius: 7% 10%;
+  border-bottom-left-radius: 7% 10%;
 }
 
 #keyboard-adds li{
@@ -221,12 +222,12 @@ list-style: none;
   align-items: center;
   list-style: none;
   background-color: grey;
-  margin: 10px 5px;
+  margin: 0px 5px;
   padding:5px;
-  border-top-right-radius: 1% 10%;
-  border-top-left-radius: 1% 10%;
-  border-bottom-right-radius: 1% 10%;
-  border-bottom-left-radius: 1% 10%;
+  border-top-right-radius: 7% 10%;
+  border-top-left-radius: 7% 10%;
+  border-bottom-right-radius: 7% 10%;
+  border-bottom-left-radius: 7% 10%;
 }
 
 #keybaord-directionals li{
