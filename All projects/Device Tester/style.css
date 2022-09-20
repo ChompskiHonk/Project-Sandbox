@@ -41,7 +41,7 @@ body{
 /*Top keys of key board */
 #keyboard-toprow{
   display: flex;
-  width: 853px;
+  width: 852px;
   justify-content: space-between;
   align-items: center;
   background-color: grey;
