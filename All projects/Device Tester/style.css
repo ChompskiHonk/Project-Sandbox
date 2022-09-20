@@ -41,6 +41,7 @@ body{
 /*Top keys of key board */
 #keyboard-toprow{
   display: flex;
+  width: 853px;
   justify-content: space-between;
   align-items: center;
   background-color: grey;
@@ -82,6 +83,14 @@ body{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
+
+#section{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
 /* bottom row of keyboard*/
 #keyboard-bottom{
   display: flex;
