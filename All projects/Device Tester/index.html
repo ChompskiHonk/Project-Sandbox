@@ -1,7 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Tester</title>
     <script src="https://kit.fontawesome.com/985d935cd4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div id="device-nav">
@@ -14,9 +18,10 @@
    <div id="the-magic">
      <p>Test your keyboard, if the website detects the key was pressed, the key will light up green. Begin by pressing any of your keys!</p>
    
-     <button id="run">Start testing</button>
+     <div id="de-buttons">
+       <button id="run">Start testing</button>
+     <button id=cancel hidden>Cancel</button></div> 
     
-     
     <!-- The Keyboard-->
     <div id="the-keyboard">
       <div id="keyboard-toprow">
@@ -135,6 +140,6 @@
       
     </div>
    </div>
-    
+    <script scr="DevTester.js"></script>
   </body>
 </html>
