@@ -5,18 +5,41 @@
   </head>
   <body>
     <div id="device-nav">
-      <a href="#" class="selected">Keyboard Mini</a>
-      <a href="#">Standard Keyboard</a>
+      <a href="#">Keyboard Mini</a>
+      <a href="#" class="selected">Standard Keyboard</a>
       <!-- Past this point will be console controllers, my place more here, but for now, just starting off with the ones I have personally-->
       <a href="#">PlayStation 4</a>
     </div>
    <!-- The prompt-->
+   <div id="the-magic">
+     <p>Test your keyboard, if the website detects the key was pressed, the key will light up green. Begin by pressing any of your keys!</p>
    
-    <p>Test your keyboard, if the website detects the key was pressed, the key will light up green. Begin by pressing any of your keys!</p>
-   <!-- The Keyboard-->
-   
+    
+    <!-- The Keyboard-->
     <div id="the-keyboard">
-      <ul id="keyboard">
+      <div id="keyboard-toprow">
+        <ul id="keyboard-top">
+        <li class="escape">Esc</li>
+        <li class="F1">F1</li>
+        <li class="F2">F2</li>
+        <li class="F3">F3</li>
+        <li class="F4">F4</li>
+        <li class="F5">F5</li>
+        <li class="F6">F6</li>
+        <li class="F7">F7</li>
+        <li class="F8">F8</li>
+        <li class="F9">F9</li>
+        <li class="F10">F10</li>
+        <li class="F11">F11</li>
+        <li class="F12">F12</li>
+        
+      </ul>
+        <div class="number-lock">NumLock</div>
+      </div>
+      
+      
+      <div id="keyboard-bottom">
+        <ul id="keyboard">
         <li  class="symbol"><span class="off">`</span><span class="on">~</span></li>
         <li  class="symbol"><span class="off">1</span><span class="on">!</span></li>
         <li  class="symbol"><span class="off">2</span><span class="on">@</span></li>
@@ -86,6 +109,30 @@
         <li class="right-ctrl ctrl">R-ctrl</li>
        
     </ul>
+        <div id="keyboard-rightside">
+          <ul id="keyboard-adds">
+            <li class="insert">Insert</li>
+            <li class="home">Home</li>
+            <li class="pageUp">PgUp</li>
+            <li class="delete">Delete</li>
+            <li class="end">End</li>
+            <li class="pageDown">PgDn</li>
+          </ul>
+          
+          <ul id="keybaord-directionals">
+            <li class="up"><i class="fa-solid fa-arrow-up"></i></li>
+            <div id="direct-bottom">
+              <li class="left"><i class="fa-solid fa-arrow-left"></i></li>
+              <li class="down"><i class="fa-solid fa-arrow-down"></i></li>
+              <li class="right"><i class="fa-solid fa-arrow-right"></i></li>
+            </div>
+          </ul>
+        </div>
+        
+      </div>
+      
     </div>
+   </div>
+    
   </body>
 </html>
