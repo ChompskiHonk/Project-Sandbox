@@ -1,12 +1,25 @@
+//List of all of the
+var listOfKeys = document.querySelectorAll('li');
 //Fucntion to detect keys on keyboard
 function detect(e){
-    //for(let i = 0; i < listOfKeys.length; i++){
+  
   e.shiftKey = false;
   e.ctrlKey = false;
   e.altKey = false;
-      console.log(e.key);
-     // if(listOfKeys[i].innerHTML == e.key) 
-   // }
+  e.capsKey = false;
+   console.log(e.key);
+  if(e.key == "NumLock"){
+    document.getElementsByClassName("number-lock")[0].style.backgroundColor = "green";
+  } else{
+    for(let i = 0; i < listOfKeys.length; i++){
+    if(listOfKeys[i].id == e.key){
+      listOfKeys[i].style.backgroundColor = "green";
+    }
+  }
+   
+  }
+     
+   
   }
 //Starting the testing process
 document.getElementById("run").addEventListener("click", ()=>{
@@ -16,7 +29,7 @@ document.getElementById("run").addEventListener("click", ()=>{
   document.querySelector('#the-magic p').innerHTML = "Start pressing all of your keys! Each one that is detected will be confirmed ont his page, showing which ones work and which ones don't (if there are any...)";
   
   //get the list of all the "keys" shown on the web page
-  let listOfKeys = document.querySelectorAll('li');
+  
   
   //since num lock is not  a list item, it's opacity needs to be chnaged outside the for-loop
   document.getElementsByClassName('number-lock')[0].style.opacity = 0.4;
