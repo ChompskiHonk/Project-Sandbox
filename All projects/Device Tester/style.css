@@ -242,6 +242,7 @@ list-style: none;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
+
 #direct-bottom{
   display: flex;
   flex-direction: row;
