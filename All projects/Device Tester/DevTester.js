@@ -2,17 +2,17 @@
 var listOfKeys = document.querySelectorAll('li');
 //Fucntion to detect keys on keyboard
 function detect(e){
-  
+  //Editor's Note: Find a way to disable keyCodes 27 (ESCAPE), 112-123 (F1 - F12), 18 (alt), 20(CapsLoc), 91(OS/Windows), 93 (Context menu)   
   e.shiftKey = false;
   e.ctrlKey = false;
   e.altKey = false;
   e.capsKey = false;
-   console.log(e.key);
+   console.log("Key: "+e.key+" key code = "+e.keyCode);
   if(e.key == "NumLock"){
     document.getElementsByClassName("number-lock")[0].style.backgroundColor = "green";
   } else{
     for(let i = 0; i < listOfKeys.length; i++){
-    if(listOfKeys[i].id == e.key){
+    if(listOfKeys[i].id == e.key || listOfKeys[i].innerHTML == e.key){
       listOfKeys[i].style.backgroundColor = "green";
     }
   }
