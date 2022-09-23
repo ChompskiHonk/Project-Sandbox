@@ -16,15 +16,19 @@ function detect(e){
   e.shiftKey = false;
   e.ctrlKey = false;
   e.altKey = false;
-  e.capsKey = false;
-   console.log("Key: "+e.key+" key code = "+e.keyCode);
+   console.log("Key: "+e.key+", key code = "+e.keyCode+", keyboard: code: "+e.code);
   if(e.key == "NumLock"){
     document.getElementsByClassName("number-lock")[0].style.backgroundColor = "green";
   } else{
     for(let i = 0; i < listOfKeys.length; i++){
-    if(listOfKeys[i].id == e.key || listOfKeys[i].innerHTML == e.key){
+    if(listOfKeys[i].id == e.code || listOfKeys[i].innerHTML == e.key){
       listOfKeys[i].style.backgroundColor = "green";
+      if(e.code == "AltLeft" || e.code=="AltRight"){
+        document.getElementById("com").style.backgroundColor = "green";
+      }
     }
+      
+     
   }
    
   }
