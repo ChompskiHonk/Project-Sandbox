@@ -4,11 +4,13 @@ var listOfKeys = document.querySelectorAll('li');
 function detect(e){
   //Editor's Note: Find a way to disable keyCodes 27 (ESCAPE), 112-123 (F1 - F12), 18 (alt), 20(CapsLoc), 91(OS/Windows), 93 (Context menu) 
   //code to try to do the above can be found bellow...(gotten from https://stackoverflow.com/questions/16556433/how-to-disable-windows-keys-logo-key-and-menu-key-using-javascript)  
-  if (e.keyCode == 91 || e.keyCode == 93) {
-        window.event.keyCode = 0;
-        window.event.returnValue = false;
-        return false;
-    }
+  
+  //The code bellow is supposed to change the key values (and it does), but it is not diasbling the keys...
+  //if (e.keyCode == 91 || e.keyCode == 93) {
+        //window.event.keyCode = 0;
+        //window.event.returnValue = false;
+      //  return false;
+    //}
 
   //disabling some keys bellow
   e.shiftKey = false;
