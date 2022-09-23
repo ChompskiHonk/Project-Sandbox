@@ -62,3 +62,14 @@ figcaption{
   padding: 5px;
 }
 
+.Article{
+  width: 500px;
+  margin: 10px 20px;
+  padding: 20px;
+  background-color:#fae5db; 
+  box-shadow: 10px 10px 5px #f8cec8;
+}
+
+#article-section-1{
+  display: flex;
+}
