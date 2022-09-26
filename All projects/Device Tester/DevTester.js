@@ -1,9 +1,9 @@
 //Attempt to diable F1 - F12 keys
 document.onkeydown = function (e) {
- 
+         
         // disable F12 key
         if(e.keyCode >= 112 || e.keyCode <= 123) return false;
-        
+        if(e.keyCode == 18) e.preventDefault();
 }
 
 //Attempt to disable CapsLock on the page
@@ -17,15 +17,8 @@ document.onkeypress =(event)=>{
 var listOfKeys = document.querySelectorAll('li');
 //Fucntion to detect keys on keyboard
 function detect(e){
-  //Editor's Note: Find a way to disable keyCodes 27 (ESCAPE), 112-123 (F1 - F12), 18 (alt), 20(CapsLoc), 91(OS/Windows), 93 (Context menu) 
-  //code to try to do the above can be found bellow...(gotten from https://stackoverflow.com/questions/16556433/how-to-disable-windows-keys-logo-key-and-menu-key-using-javascript) 
-  
-
-  //disabling some keys bellow
-  
-  e.shiftKey = false;
-  e.ctrlKey = false;
-  e.altKey = false;
+  //Editor's Note: Find a way to disable  93 (Context menu) 
+ 
    console.log("Key: "+e.key+", key code = "+e.keyCode+", keyboard: code: "+e.code);
   if(e.key == "NumLock"){
     document.getElementsByClassName("number-lock")[0].style.backgroundColor = "green";
