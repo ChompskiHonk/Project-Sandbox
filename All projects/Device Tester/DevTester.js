@@ -1,16 +1,17 @@
+//Attempt to disable CapsLock on the page
+window.onkeypress =(event)=>{
+    if(event.getModifierState("CapsLock")){
+      CapsLock = false;
+    }
+  }; 
+
 //List of all of the
 var listOfKeys = document.querySelectorAll('li');
 //Fucntion to detect keys on keyboard
 function detect(e){
   //Editor's Note: Find a way to disable keyCodes 27 (ESCAPE), 112-123 (F1 - F12), 18 (alt), 20(CapsLoc), 91(OS/Windows), 93 (Context menu) 
-  //code to try to do the above can be found bellow...(gotten from https://stackoverflow.com/questions/16556433/how-to-disable-windows-keys-logo-key-and-menu-key-using-javascript)  
+  //code to try to do the above can be found bellow...(gotten from https://stackoverflow.com/questions/16556433/how-to-disable-windows-keys-logo-key-and-menu-key-using-javascript) 
   
-  //The code bellow is supposed to change the key values (and it does), but it is not diasbling the keys...
-  //if (e.keyCode == 91 || e.keyCode == 93) {
-        //window.event.keyCode = 0;
-        //window.event.returnValue = false;
-      //  return false;
-    //}
 
   //disabling some keys bellow
   e.shiftKey = false;
@@ -21,7 +22,12 @@ function detect(e){
     document.getElementsByClassName("number-lock")[0].style.backgroundColor = "green";
   } else{
     for(let i = 0; i < listOfKeys.length; i++){
-    if(listOfKeys[i].id == e.code || listOfKeys[i].innerHTML == e.key){
+      let s = "";
+      if(e.getModifierState("CapsLock") && e.key.length == 1){
+     
+        s = e.key.toLowerCase();
+      } else s = e.key;
+    if(listOfKeys[i].id == e.code || listOfKeys[i].innerHTML == s){
       listOfKeys[i].style.backgroundColor = "green";
       if(e.code == "AltLeft" || e.code=="AltRight"){
         document.getElementById("com").style.backgroundColor = "green";
