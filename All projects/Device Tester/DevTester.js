@@ -21,7 +21,8 @@ function detect(e){
  
    console.log("Key: "+e.key+", key code = "+e.keyCode+", keyboard: code: "+e.code);
   if(e.key == "NumLock"){
-    document.getElementsByClassName("number-lock")[0].style.backgroundColor = "green";
+    document.getElementsByClassName("number-lock")[0].style.backgroundColor = "#dfe";
+    document.getElementsByClassName('number-lock')[0].style.opacity = 1;
   } else{
     for(let i = 0; i < listOfKeys.length; i++){
       let s = "";
@@ -30,7 +31,8 @@ function detect(e){
         s = e.key.toLowerCase();
       } else s = e.key;
     if(listOfKeys[i].id == e.code || listOfKeys[i].innerHTML == s){
-      listOfKeys[i].style.backgroundColor = "green";
+      listOfKeys[i].style.backgroundColor = "#dfe";
+      listOfKeys[i].style.opacity = 1;
       if(e.code == "AltLeft" || e.code=="AltRight"){
         document.getElementById("com").style.backgroundColor = "green";
       }
@@ -71,8 +73,10 @@ document.getElementById("cancel").addEventListener('click', ()=>{
   removeEventListener('keydown', detect);
   let listOfKeys = document.querySelectorAll('li');
   document.getElementsByClassName('number-lock')[0].style.opacity = 1;
+  document.getElementsByClassName('number-lock')[0].style.backgroundColor = "#ddd";
   for(let i = 0; i < listOfKeys.length; i++){
     document.querySelectorAll('li')[i].style.opacity = 1;
+    listOfKeys[i].style.backgroundColor = "#ddd";
   }
   
   document.querySelector('#the-magic p').innerHTML = "Test your keyboard, if the website detects the key was pressed, the key will light up green. Begin by pressing any of your keys!";
