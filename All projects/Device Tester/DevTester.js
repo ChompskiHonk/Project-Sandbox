@@ -1,6 +1,14 @@
+//Attempt to diable F1 - F12 keys
+document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode >= 112 || e.keyCode <= 123) return false;
+        
+}
+
 //Attempt to disable CapsLock on the page
-window.onkeypress =(event)=>{
-    if(event.getModifierState("CapsLock")){
+document.onkeypress =(event)=>{
+   if(event.getModifierState("CapsLock")){
       CapsLock = false;
     }
   }; 
@@ -14,6 +22,7 @@ function detect(e){
   
 
   //disabling some keys bellow
+  
   e.shiftKey = false;
   e.ctrlKey = false;
   e.altKey = false;
@@ -57,7 +66,7 @@ document.getElementById("run").addEventListener("click", ()=>{
   for(let i = 0; i < listOfKeys.length; i++){
     document.querySelectorAll('li')[i].style.opacity = 0.4;
   }
-
+  
   window.addEventListener('keydown', detect);
   
 document.getElementById("run").setAttribute('disabled', '');
