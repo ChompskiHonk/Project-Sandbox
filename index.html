@@ -1,145 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Tester</title>
-    <script src="https://kit.fontawesome.com/985d935cd4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="device-nav">
-      <a id="MiniKey" href="#">Keyboard Mini</a>
-      <a id="StandardKey" href="#" class="selected">Standard Keyboard</a>
-      <!-- Past this point will be console controllers, my place more here, but for now, just starting off with the ones I have personally-->
-      <a id="PS4" href="#">PlayStation 4</a>
-    </div>
-   <!-- The prompt-->
-   <div id="the-magic">
-     <p>Test your keyboard, if the website detects the key was pressed, the key will light up green. Begin by pressing any of your keys!</p>
-   
-     <div id="de-buttons">
-       <button id="run">Start testing</button>
-     <button id=cancel hidden>Cancel</button></div> 
-    
-    <!-- The Keyboard-->
-    <div id="the-keyboard">
-      <div id="keyboard-toprow">
-        <ul id="keyboard-top">
-        <li id="Escape"  class="escape">Esc</li>
-        <li id="F1" class="F1">F1</li>
-        <li id="F2" class="F2">F2</li>
-        <li id="F3" class="F3">F3</li>
-        <li id="F4" class="F4">F4</li>
-        <li id="F5" class="F5">F5</li>
-        <li id="F6" class="F6">F6</li>
-        <li id="F7" class="F7">F7</li>
-        <li id="F8" class="F8">F8</li>
-        <li id="F9" class="F9">F9</li>
-        <li id="F10" class="F10">F10</li>
-        <li id="F11" class="F11">F11</li>
-        <li id="F12" class="F12">F12</li>
-        
-      </ul>
-        <div id="NumLock" class="number-lock">NumLock</div>
-      </div>
-      
-      
-      <div id="keyboard-bottom">
-        <ul id="keyboard">
-        <li class="symbol">`</li>
-        <li class="symbol">1</li>
-        <li  class="symbol">2</li>
-        <li  class="symbol">3</li>
-        <li  class="symbol">4</li>
-        <li class="symbol">5</li>
-        <li  class="symbol">6</li>
-        <li id="float" class="symbol">7</li>
-        <li class="symbol">8</li>
-        <li class="symbol">9</li>
-        <li class="symbol">0</li>
-        <li id="-" class="symbol">-</li>
-        <li id="=" class="symbol">=</li>
-        <li class="delete lastitem">Backspace</li>
-        <li class="tab">Tab</li>
-        <li class="letter">q</li>
-        <li class="letter">w</li>
-        <li class="letter">e</li>
-        <li class="letter">r</li>
-        <li class="letter">t</li>
-        <li class="letter">y</li>
-        <li class="letter">u</li>
-        <li class="letter">i</li>
-        <li class="letter">o</li>
-        <li class="letter">p</li>
-        <li class="symbol">[</li>
-        <li class="symbol">]</li>
-        <li class="symbol lastitem">\</li>
-        <li class="capslock">CapsLock</li>
-        <li class="letter">a</li>
-        <li class="letter">s</li>
-        <li class="letter">d</li>
-        <li class="letter">f</li>
-        <li class="letter">g</li>
-        <li class="letter">h</li>
-        <li class="letter">j</li>
-        <li class="letter">k</li>
-        <li class="letter">l</li>
-        <li class="symbol">;</li>
-        <li class="symbol">'</li>
-        <li class="return lastitem">Enter</li>
-        <li id="ShiftLeft" class="left-shift">L-Shift</li>
-        <li class="letter">z</li>
-        <li class="letter">x</li>
-        <li class="letter">c</li>
-        <li class="letter">v</li>
-        <li class="letter">b</li>
-        <li class="letter">n</li>
-        <li class="letter">m</li>
-        <li class="symbol">,</li>
-        <li class="symbol">.</li>
-        <li class="symbol">/</li>
-        <li id="ShiftRight" class="right-shift lastitem">R-Shift</li>
-       
-        <li id="ControlLeft" class="left-ctrl ctrl">L-Ctrl</li>
-        <li class="fn left">Fn</li>
-        <li id="OSLeft" class="OS"><i class="fa-brands fa-windows"></i>
+    <title>Project Sandbox</title>
+    <link rel="stylesheet" href="smokinsexystyle.css">
+    <script src="https://kit.fontawesome.com/985d935cd4.js"></script>
 
-</li>
-        <li id="AltLeft" class="left-alt">L-Alt</li>
-        <li id="Space" class="space">&nbsp;</li>
-        <li id="AltRight" class="right-alt">R-Alt</li>
-        <li id="ContextMenu" class="cn-txt"><i class="fa-regular fa-file-lines"></i></li>
-        <li id="com" class="command">
-          <span>&#8984;</span>
-          <p>command</p></li>
-        <li id="ControlRight" class="right-ctrl ctrl">R-Ctrl</li>
-       
-    </ul>
-        <div id="keyboard-rightside">
-          <ul id="keyboard-adds">
-            <li class="insert">Insert</li>
-            <li class="home">Home</li>
-            <li id="PageUp" class="pageUp">PgUp</li>
-            <li class="delete">Delete</li>
-            <li class="end">End</li>
-            <li id="PageDown"  class="pageDown">PgDn</li>
-          </ul>
-          
-          <ul id="keybaord-directionals">
-            <li id="ArrowUp" class="up"><i class="fa-solid fa-arrow-up"></i></li>
-            <div id="direct-bottom">
-              <li id="ArrowLeft" class="left"><i class="fa-solid fa-arrow-left"></i></li>
-              <li id="ArrowDown" class="down"><i class="fa-solid fa-arrow-down"></i></li>
-              <li id="ArrowRight" class="right"><i class="fa-solid fa-arrow-right"></i></li>
-            </div>
-          </ul>
+    
+</head>
+<body>
+    <div class="header">
+        <i class="fa-brands fa-connectdevelop"></i>
+        <div id="header-nav">
+            <a href="#" class="active">Projects</a>
+            <a href="#" >Home</a>
+            <a href="https://github.com/ChompskiHonk" >GitHub</a>
+            <a href="https://www.linkedin.com/in/robert-andrews-746897204/" >LinkedIn</a>
+            <a href="#" id="close"><i class="fas fa-xmark"></i></a>
+        </div> 
+        <div id="mobile">
+            <i id="bars" class="fas fa-outdent"></i>
         </div>
-        
-      </div>
-      
     </div>
-   </div>
-    <script scr="DevTester.js"></script>
-  </body>
+
+        <div class="main-proj-board">
+            <div class="proj-board-pos">
+                <div class="project-title"><h1>Projects</h1></div>
+                <div class="project-options">
+                    <!-- Each One will have an OnClick javaScript command 
+                    to show certain projects based on their status-->
+                    <div class="active option" id="all">All</div>
+                    <div class="option" id="finished">Finished</div>
+                    <div class="option" id="incomplete">Incomplete</div>
+                    <div class="option" id="immitation">Imitations</div>
+                    <div class="option" id="abandoned">Abandoned</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h3>Features all the projects that I have worked on as of August 2022.</h3>
+            
+            <div class="project-container">
+
+                <div class="proj all finished">
+                    <a href="All projects/CSSS Color Markers/index.html">
+                        <img src="Project Images/CSSMarkers.png" alt="CSS Markers">
+                        <div class="proj-des">
+                            <div class="proj-des-name">CSS Color Markers</div>
+                            <div class="proj-des-text" >
+                                <p>A website that emphasized using css to display art using various shapes and colors.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all finished">
+                    <a href="All projects/Registration Form/index.html">
+                        <img src="Project Images/RegistrationForm.png" alt="Registration Form">
+                        <div class="proj-des">
+                            <div class="proj-des-name">Registration forms</div>
+                            <div class="proj-des-text" >
+                                <p>An example registration form using html and css.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all finished">
+                    <a href="All projects/FollowAlongEcommerceSite/EcomHome.html">
+                        <img  src="Project Images/CaraEcommerce.png" alt="Cara">
+                        <div class="proj-des">
+                            <div class="proj-des-name">Cara</div>
+                            <div class="proj-des-text" >
+                                <p>A customized follow along project that replicatres and e-cmmerce website.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                 <div class="proj all finished abandoned">
+                    <a href="https://chompskihonk.github.io/qcFirst-Web/">
+                        <img  src="Project Images/CaraEcommerce.png" alt="Cara">
+                        <div class="proj-des">
+                            <div class="proj-des-name">qcFirst</div>
+                            <div class="proj-des-text" >
+                                <p>A website that was developed in 2021 to resemble a mix between "cunyFirst" and the Queens College website. It is in dire need of an upgrade...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="proj all finished abandoned">
+                    <a href="https://chompskihonk.github.io/web_qcfirst/">
+                        <img  src="Project Images/CaraEcommerce.png" alt="Cara">
+                        <div class="proj-des">
+                            <div class="proj-des-name">Web-qcFirst</div>
+                            <div class="proj-des-text" >
+                                <p>The second and final version of the website that I worked on with my partner in college. Both of these sites will be revisited in the future...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all incomplete immitation abandoned">
+                    <a href="All projects/Recreating Amazon/index.html">
+                        <div class="img-background-amazon">
+                            <img class="amazon" src="Project Images/Amazonlogo.png" alt="Amazon Logo">
+                            <p>(the clone)</p>
+                        </div>
+                        <div class="proj-des">
+                            <div class="proj-des-name">Amazon Imitation</div>
+                            <div class="proj-des-text" >
+                                <p>This is an attempt to recreate Amazon's homepage for the sake of improving my front-end development skills.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all incomplete immitation">
+                    <a href="All projects/Yale Medicine Design Study/MainPage.html">
+                        <div class="img-background-Yale">
+                            <span class="Yalelogo"><b>Yale</b>Medicine</span>
+                            <p>(the clone)</p>
+                        </div>
+                        <div class="proj-des">
+                            <div class="proj-des-name">Yale Imitation</div>
+                            <div class="proj-des-text" >
+                                <p>This is an attempt to recreate one of Yale's Article pages in the medical field.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="proj all finished ">
+                    <a href="All projects/Counting Stray Sheep (Based on Catherine)/index.html">
+                        <div class="img-background-StraySheep">
+                            <img id="StraySheep" src="Project Images/BetterStraySheepLogo.png" alt="Stray Sheep Logo">
+                            
+                        </div>
+                        <div class="proj-des">
+                            <div class="proj-des-name">Counting Stray Sheep</div>
+                            <div class="proj-des-text" >
+                                <p>This project is a counting page with customized CSS art and animations inspired by the indie-game classic, <i>"Catherine"</i>.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proj all finished ">
+                    <a href="All projects/Color Switch/index.html">
+                        <div class="img-background-ColorSwitch">
+                            <img id="ColorSwitchPic" src="Project Images/image_2022-08-20_111854072.png" alt="Color Switch Picture">
+                            
+                        </div>
+                        <div class="proj-des">
+                            <div class="proj-des-name">Color Switch</div>
+                            <div class="proj-des-text" >
+                                <p>This project is a page that lets you change the page's background color property to a random one.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <script src="Action.js"></script>
+</body>
 </html>
