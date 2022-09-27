@@ -39,6 +39,13 @@ but you never know...)*/
   width: 100%;
 }
 
+#banner h1{
+  position: absolute;
+  font-size: 80px;
+  color: white;
+  left: 250px;
+}
+
 figure{
   width: 100%;
   margin: 0; /*figure was given a deault margin that had tp be removed as well, not unlike the entire body originally*/
@@ -73,3 +80,4 @@ figcaption{
 #article-section-1{
   display: flex;
 }
+
