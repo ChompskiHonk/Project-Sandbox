@@ -1,15 +1,42 @@
 /* Color Schemes:
 
+/* Color Schemes:
 #dae4e5(Very Light Blue, almost white)
 #296e6b(Dark Turquoise)
 #38c3ca(Turquoise)
 #d286aa(pink)
 #0265a0(blue)
 #b6b3ae(grey(ish))
-
 */
 body{
   margin: 0;
   padding: 0;
   background-color: #dae4e5; 
 }
+
+#navigation{
+  display: flex;
+  justify-content: space-between; 
+}
+
+#navigation #title h3{
+  padding: 0px;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+}
+
+#icon{
+  color: #d286aa;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#icon:hover{
+  color: pink;
+}
+
+
