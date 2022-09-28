@@ -1,6 +1,4 @@
 /* Color Schemes:
-
-/* Color Schemes:
 #dae4e5(Very Light Blue, almost white)
 #296e6b(Dark Turquoise)
 #38c3ca(Turquoise)
@@ -14,18 +12,26 @@ body{
   background-color: #dae4e5; 
 }
 
+/* navigation (top of page) */
 #navigation{
   display: flex;
   justify-content: space-between; 
 }
 
+/* right side*/
 #navigation #title h3{
+  position: sticky;
+  top: 0;
   padding: 0px;
-  margin: 0px 10px;
+  margin: 15px;
   display: flex;
   align-items: center;
-  color: white;
+  color: #b6b3ae;
   font-size: 40px;
+}
+
+#pronuciation{
+  cursor: help;
 }
 
 #icon{
@@ -39,4 +45,30 @@ body{
   color: pink;
 }
 
+/* left side of navigation*/
+#navigation ul{
+  margin: 15px;
+  padding: 0;
+  display: flex;
+  List-style: none;
+  gap: 10px;
+}
 
+#navigation ul li{
+  height: 1.5rem;
+  margin: auto 0;
+  padding: 2.5px;
+  color: #b6b3ae;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease
+}
+
+#navigation ul li:hover{
+  color: #296e6b;
+}
+
+/* Responsive Design*/
+media(max-width: 595;){
+  
+}
