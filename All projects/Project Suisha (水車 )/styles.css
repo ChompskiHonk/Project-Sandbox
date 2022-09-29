@@ -27,13 +27,18 @@ body{
 
 /* left side*/
 #navigation #title h3{
-  z-index: 99;
+  
   padding: 0px;
   margin: 15px;
   display: flex;
   align-items: center;
   color: #b6b3ae;
   font-size: 40px;
+  
+}
+
+#navigation #title h3 div{
+  z-index: 99;
 }
 
 #pronuciation{
@@ -77,6 +82,7 @@ body{
 
 #navigation ul i{
   display: none;
+  
 }
 
 #navigation #responsive-part{
@@ -87,6 +93,7 @@ body{
   cursor: pointer;
   transition: 0.4s ease;
   display: none; 
+  
 }
 
 #navigation ul #done{
@@ -100,6 +107,15 @@ body{
 #navigation #responsive-part:hover, #navigation ul #done:hover{
   color: pink;
 }
+
+/* Banner photo slider*/
+#banner{
+  width: 95%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+}
+
 
 /* Responsive Design*/
 @media(max-width: 899px){ 
