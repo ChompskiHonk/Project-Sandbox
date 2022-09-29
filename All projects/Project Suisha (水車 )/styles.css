@@ -116,6 +116,23 @@ body{
   background-color: black;
 }
 
+#About-us{
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  font-size: 20px;
+}
+
+#About-us #heading{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size:45px;
+}
+#a-few-words{
+  display: flex;
+  flex-direction: row;
+}
 
 /* Responsive Design*/
 @media(max-width: 899px){ 
