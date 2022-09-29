@@ -11,3 +11,16 @@ icon.addEventListener('click', ()=>{
     document.getElementById('pronuciation').innerHTML = '|Suisha';
   }
 });
+//adding responsive functionality to webpage when it's width is lower than 595px
+
+//First, clicking the 3 bars in the nav menu bar will drop down the original options that were hidden...
+let bars = document.getElementById('responsive-part');
+bars.addEventListener('click', ()=>{
+  document.querySelector('#navigation ul').style.top = "0";
+});
+
+//...and then, clicking the 'X' icon will get rid of the drop down menu.
+let x = document.getElementById('done');
+x.addEventListener('click', ()=>{
+  document.querySelector('#navigation ul').style.top = "-400px";
+});
