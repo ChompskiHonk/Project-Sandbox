@@ -6,6 +6,8 @@
 #0265a0(blue)
 #b6b3ae(grey(ish))
 */
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@200;400;500;600;700;800;900&display=swap');
+/* new font above called "anybody"*/
 body{
   margin: 0;
   padding: 0;
@@ -34,7 +36,7 @@ body{
   align-items: center;
   color: #b6b3ae;
   font-size: 40px;
-  
+  transition: 0.4s ease;
 }
 
 #navigation #title h3 div{
@@ -121,7 +123,10 @@ body{
   width: 100%;
   flex-direction: column;
   color: white;
+  font-family: 'Anybody', cursive;
+  font-weight: 400;
   font-size: 20px;
+  
 }
 
 #About-us #heading{
@@ -131,7 +136,7 @@ body{
   justify-content: center;
   width: 100%;
   font-size:45px;
-  background-color: #38c3ca;
+  background-color:  #97b2b5;
   
 }
 
@@ -144,11 +149,15 @@ body{
 #a-few-words #desc{
   padding: 20px;
   padding-right: 200px;
-  background-color:#296e6b;
+  background-color:#5f8386;
 }
 
-#a-few-words #goals{
-  background-color:#0265a0;
+#a-few-words #desc span{
+  color:#d286aa;
+}
+
+#a-few-words #goal{
+  background-color:#153836;
   padding: 20px;
 }
 
