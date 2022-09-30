@@ -118,21 +118,40 @@ body{
 
 #About-us{
   display: flex;
+  width: 100%;
   flex-direction: column;
-  padding: 0 25px;
+  color: white;
   font-size: 20px;
 }
 
 #About-us #heading{
+  margin:0;
+  padding:0;
   display: flex;
   justify-content: center;
   width: 100%;
   font-size:45px;
+  background-color: #38c3ca;
+  
 }
+
+
 #a-few-words{
   display: flex;
   flex-direction: row;
 }
+
+#a-few-words #desc{
+  padding: 20px;
+  padding-right: 200px;
+  background-color:#296e6b;
+}
+
+#a-few-words #goals{
+  background-color:#0265a0;
+  padding: 20px;
+}
+
 
 /* Responsive Design*/
 @media(max-width: 899px){ 
