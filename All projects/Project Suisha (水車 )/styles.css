@@ -12,6 +12,7 @@ body{
   margin: 0;
   padding: 0;
   background-color:#c3d3d5; 
+  
 }
 
 /* navigation (top of page) */
@@ -65,6 +66,7 @@ body{
   display: flex;
   List-style: none;
   gap: 10px;
+  font-family: 'Anybody', cursive;
   transition: 0.4s ease;
 }
 
@@ -73,7 +75,7 @@ body{
   margin: auto 0;
   padding: 2.5px;
   color: #b6b3ae;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
   transition: 0.3s ease
 }
@@ -161,6 +163,54 @@ body{
   padding: 20px;
 }
 
+/* Featured section*/
+#featured{
+  background-color:#0b0f0f;
+}
+
+#featured #section-title{
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #2a3c32;
+  height: 4rem;
+  
+}
+
+#featured #section-title h2{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  color:white;
+  width: fit-content;
+  height: fit-content;
+}
+
+#featured div#anime-lineup{
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#featured #anime-lineup a{
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+}
+
+#tooltip{
+  display: none; 
+  
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#featured a img{
+  height:280px;
+}
 
 /* Responsive Design*/
 @media(max-width: 899px){ 
@@ -174,7 +224,7 @@ body{
     height: 300px;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
   }
   
   #navigation #responsive-part{
@@ -183,5 +233,11 @@ body{
   
   #navigation ul i{
     display: block;
+  }
+}
+
+@media(max-width: 600px){
+  #navigation #title h3 div{
+  z-index: 1;
   }
 }
