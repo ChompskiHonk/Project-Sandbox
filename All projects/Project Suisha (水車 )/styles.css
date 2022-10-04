@@ -115,11 +115,9 @@ body{
 /* Banner photo slider*/
 
 /*EVERYTHING ELSE UNDER IT IS EXPERIMENTATION
-
 #banner-experiment{
   overflow-x: scroll;
 }
-
 #banner{
   display: flex;
   width: 300%;
@@ -127,26 +125,20 @@ body{
   background-color: black;
   
 }
-
 #i-1{
   background-color: red;
 }
-
 #i-2{
    background-color: blue;
 }
-
 #i-3{
    background-color: green;
 }
-
 .ban{
   width: 100%;
   z-index="2"
 }
-
 EDITOR'S NOTE:Everything above is experimentaion and will be replaced with original banner code whne it is done
-
 IT IS NOT OFFICAL CODE TOBE PUT IN*/
 #banner{
   width: 95%;
@@ -224,6 +216,8 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 #featured div#anime-lineup{
   padding: 20px 30px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-around;
   
 }
