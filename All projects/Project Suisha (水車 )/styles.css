@@ -15,6 +15,11 @@ body{
   
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* navigation (top of page) */
 #navigation{
   display: flex;
@@ -26,6 +31,7 @@ body{
   transition: 0.4s ease;
   box-shadow: 0px 0px 15px 0px black;
   z-index: 99;
+  
 }
 
 /* left side*/
@@ -78,6 +84,10 @@ body{
   font-weight: 400;
   cursor: pointer;
   transition: 0.3s ease
+}
+
+#navigation ul li a{
+  color: inherit;
 }
 
 #navigation ul li:hover{
@@ -145,6 +155,7 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   height: 400px;
   margin: 0 auto;
   background-color: black;
+  margin-top: 60px;
 }
 
 #About-us{
