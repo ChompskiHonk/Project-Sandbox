@@ -124,16 +124,17 @@ a{
 
 /* Banner photo slider*/
 
-/*EVERYTHING ELSE UNDER IT IS EXPERIMENTATION
+/*EVERYTHING ELSE UNDER IT IS EXPERIMENTATION*/
 #banner-experiment{
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 #banner{
   display: flex;
-  width: 300%;
+  
+  width: 300vw;
   height: 400px;
   background-color: black;
-  
+  transition: transform 0.3s ease;
 }
 #i-1{
   background-color: red;
@@ -145,11 +146,18 @@ a{
    background-color: green;
 }
 .ban{
-  width: 100%;
-  z-index="2"
+  width: 100vw;
+  z-index:2;
+  cursor: grab;
 }
-EDITOR'S NOTE:Everything above is experimentaion and will be replaced with original banner code whne it is done
+
+.grabbing{
+  cursor: grabbing;
+}
+
+/*EDITOR'S NOTE:Everything above is experimentaion and will be replaced with original banner code whne it is done
 IT IS NOT OFFICAL CODE TOBE PUT IN*/
+/*
 #banner{
   width: 95%;
   height: 400px;
@@ -157,7 +165,7 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   background-color: black;
   margin-top: 60px;
 }
-
+*/
 #About-us{
   display: flex;
   width: 100%;
@@ -289,3 +297,4 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   z-index: 1;
   }
 }
+
