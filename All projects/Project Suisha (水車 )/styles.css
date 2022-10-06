@@ -46,7 +46,7 @@ a{
   transition: 0.4s ease;
 }
 
-#navigation #title h3 div{
+#navigation #title h3 div, #navigation #title h3 a{
   z-index: 99;
 }
 
@@ -290,6 +290,10 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   #a-few-words #goal, #a-few-words #desc{
     padding: 10px;
   }
+  
+  #featured a img{
+    height:480px;
+  }
 }
 
 @media(max-width: 600px){
@@ -297,4 +301,3 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   z-index: 1;
   }
 }
-
