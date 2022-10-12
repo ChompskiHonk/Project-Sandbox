@@ -5,6 +5,8 @@ window.addEventListener("load", function time(){
     var min = "";
     var sec = "";
     var p = "";
+  
+  //getting the current time
     if (curTime.getSeconds() < 10){
       sec = "0"+curTime.getSeconds();
     } else sec += ""+curTime.getSeconds();
@@ -22,6 +24,8 @@ window.addEventListener("load", function time(){
       hour = ""+h;
     }else hour = ""+curTime.getHours();
    
+  //getting the countdown
+  
   
   document.getElementById('current-time').innerHTML = hour+":"+min+" "+p;
     setTimeout(time, 10);
