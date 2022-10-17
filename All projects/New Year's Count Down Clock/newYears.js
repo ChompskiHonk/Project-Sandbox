@@ -11,7 +11,7 @@ function getDaDay(D) {
     var dn = D.getDate();
     var dayOfYear = dayCount[mn] + dn;
     if(mn > 1 && D.isLeapYear()) dayOfYear++;
-    return dayOfYear;
+    return 365 - dayOfYear;
 };
 //code above was taken, inpired and augmented from "https://stackoverflow.com/questions/8619879/javascript-calculate-the-day-of-the-year-1-366" from a user called "Joe Orost"
 
@@ -75,7 +75,7 @@ window.addEventListener("load", function time(){
   document.getElementById('cur-month').innerHTML = getWordedMonth(curTime);
   
   //sending the days untill the end of the current year to the webpage
- let exp = new Date("2022-01-01"); document.getElementById('endlessdays').innerHTML = getDaDay(exp);
+ let exp = new Date("2022-01-02"); document.getElementById('endlessdays').innerHTML = getDaDay(exp);
   
   //getting the countdown
   
