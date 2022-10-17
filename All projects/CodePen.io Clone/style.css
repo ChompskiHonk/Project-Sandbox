@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+}
+
+#heading{
+  background-color: #060606;
+  color: white;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px;
+}
+
+#leftside{
+  display: flex;
+}
+#leftside #icon{
+  display: flex;
+  align-items: center;
+  margin-right:5px;
+}
+#leftside #title-account{
+  margin-left:5px;
+}
+
+#leftside #title-account  #project-title{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#leftside #title-account  #project-title p{
+  font-size: 20px;
+  font-weight:bold; 
+}
+
+#rightside{
+  display: flex;
+  gap:15px;
+}
+
+.button{
+  background-color: #444857;
+  width: fit-content;
+  padding:16px 18px;
+  border-radius: 6%;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #5a5f73;
+}
+
+#signup{
+  color: black;
+  background-color: #47cf73;
+}
+
+#signup:hover{
+  background-color: #248c46;
+  color: white;
+}
