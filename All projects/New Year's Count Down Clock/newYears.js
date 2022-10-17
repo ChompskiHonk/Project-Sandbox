@@ -1,3 +1,26 @@
+function showRemaining(D) {
+        var end = new Date('01/01/2023 01:00 AM');
+        var distance = end - D;
+        if (distance < 0) {
+
+           
+           
+
+            return "WE DID IT BOYS";
+        }
+  var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        return days + 'days '+ hours + 'hrs '+ minutes + 'mins '+ seconds + 'secs';
+    }
+//code above provided by
+
 Date.prototype.isLeapYear = function() {
     var year = this.getFullYear();
     if((year & 3) != 0) return false;
@@ -75,10 +98,11 @@ window.addEventListener("load", function time(){
   document.getElementById('cur-month').innerHTML = getWordedMonth(curTime);
   
   //sending the days untill the end of the current year to the webpage
- let exp = new Date("2022-01-02"); document.getElementById('endlessdays').innerHTML = getDaDay(exp);
+  //this id just here for experimentation with other given dates for the function bellow it...
+ let exp = new Date("2022-01-02"); document.getElementById('endlessdays').innerHTML = getDaDay(curTime);
   
-  //getting the countdown
-  
+  //getting the live countdown (Hopefully to be changed to just hours later...)
+  document.getElementById("finalcountdown").innerHTML = showRemaining(curTime);
   //timeout adjustment so that page updates constantly
   setTimeout(time, 10);
 });
