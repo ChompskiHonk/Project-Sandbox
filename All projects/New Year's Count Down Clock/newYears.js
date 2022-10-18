@@ -111,9 +111,9 @@ window.addEventListener("load", function time(){
  let exp = new Date("01/01/2023 00:00"); document.getElementById('endlessdays').innerHTML = getDaDay(curTime);
   
   //getting the live countdown (Hopefully to be changed to just hours later...)
-  document.getElementById("finalcountdown").innerHTML = showRemaining(exp);
+  document.getElementById("finalcountdown").innerHTML = showRemaining(curTime);
   
-   if(newYearCheck(exp)){
+   if(newYearCheck(curTime)){
      document.getElementById('endlessdays').innerHTML = "ITS NEW YEARS";
    }
   
