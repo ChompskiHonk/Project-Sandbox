@@ -1,3 +1,13 @@
+function newYearCheck(D){
+  var newYears = new Date('01/01/2023 00:00');
+  if(D.getMonth() == newYears.getMonth() && D.getDay() == newYears.getDay() && D.getYear() == newYears.getYear()) {
+    return true; 
+    
+   }
+ else return false;
+  
+}
+//custom function above that will be used in the future...
 function showRemaining(D) {
         var end = new Date('01/01/2023 00:00 AM');
         var distance = end - D;
@@ -6,7 +16,7 @@ function showRemaining(D) {
            
            
 
-            return "WE DID IT BOYS";
+            return "HAPPY NEW YEAR!";
         }
   var _second = 1000;
     var _minute = _second * 60;
@@ -98,10 +108,15 @@ window.addEventListener("load", function time(){
   
   //sending the days untill the end of the current year to the webpage
   //this id just here for experimentation with other given dates for the function bellow it...
- let exp = new Date("2022-01-02"); document.getElementById('endlessdays').innerHTML = getDaDay(curTime);
+ let exp = new Date("01/01/2023 00:00"); document.getElementById('endlessdays').innerHTML = getDaDay(curTime);
   
   //getting the live countdown (Hopefully to be changed to just hours later...)
-  document.getElementById("finalcountdown").innerHTML = showRemaining(curTime);
+  document.getElementById("finalcountdown").innerHTML = showRemaining(exp);
+  
+   if(newYearCheck(exp)){
+     document.getElementById('endlessdays').innerHTML = "ITS NEW YEARS";
+   }
+  
   //timeout adjustment so that page updates constantly
   setTimeout(time, 10);
 });
