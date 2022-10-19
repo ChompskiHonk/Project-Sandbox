@@ -49,7 +49,7 @@ for(let i = 0; i < projOps.length; i++){
         selected byt he user*/
         container[0].innerHTML = "";
         if(keyWord == "all"){
-            h3Title.innerHTML = "Features all the projects that I have worked on as of August 2022.";
+            h3Title.innerHTML = "Features all the projects that I have worked on as of January 2021.";
             for(let i = 0; i < allProjects.length; i++){
                 container[0].innerHTML += allProjects[i].outerHTML;
             }
