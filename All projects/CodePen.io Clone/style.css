@@ -95,6 +95,8 @@ i#cog{
   display: flex;
   flex-direction: column;
   border: 1px solid #444857;
+  border-left: none;
+  border-right: none;
 }
 
 #dividerbar{
@@ -105,11 +107,32 @@ i#cog{
   border-left: none;
 }
 
+/* Section where code will go*/
 #actualCode{
   width: 100%;
   height: 50%; /* both sections will satrt off at 50% height, but it will change later...*/
+  display: flex;
 }
 
+.vert-divider{
+  height: 100%;
+  width: 18px;
+  background-color: black;
+  border: 1px solid #444857;
+  border-top: none;
+}
+
+.textbox{
+  height: 100%;
+  width: 33.33%;
+  background-color: #1d1e22;
+}
+
+#html-div{
+  border-left: none;
+}
+
+/* Section where compiled and loaded website made in code section will go*/
 #loadedSite{
   width: 100%;
   height:50%; /* both sections will satrt off at 50% height, but it will change later...*/
