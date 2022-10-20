@@ -313,6 +313,24 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   width: 30%;
   height: 200px;
 }
+
+.product-banner#LostGirlHoodie{
+  background-color: #dedfda;
+  background-image: url(https://static.wixstatic.com/media/275f63_a51e41cdd6e14b84b0419471f74e64dd~mv2.jpg/v1/fill/w_560,h_560,al_c,q_85,usm_0.66_1.00_0.01/275f63_a51e41cdd6e14b84b0419471f74e64dd~mv2.webp);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.product-banner#CarePackageCap{
+  background-color: #dedfda;
+  background-image: url(https://static.wixstatic.com/media/275f63_dc622bf9122347459276d24a61ceee13~mv2.png/v1/fill/w_420,h_560,al_c,q_90,usm_0.66_1.00_0.01/275f63_dc622bf9122347459276d24a61ceee13~mv2.webp);
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
 /* Responsive Design*/
 @media(max-width: 899px){ 
   #navigation ul{
