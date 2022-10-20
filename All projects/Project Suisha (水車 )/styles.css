@@ -12,11 +12,10 @@ body{
   margin: 0;
   padding: 0;
   background-color:#c3d3d5; 
-  
+  font-family: 'Anybody', cursive;
 }
 
 h1{
-  font-family: 'Anybody', cursive;
   font-weight: 400;
   font-size: 40px;
 }
@@ -48,6 +47,7 @@ a{
   display: flex;
   align-items: center;
   color: #b6b3ae;
+  font-family: serif;
   font-size: 40px;
   transition: 0.4s ease;
 }
@@ -61,6 +61,7 @@ a{
 }
 
 #icon{
+  font-family: 'Anybody', cursive;
   color: #d286aa;
   font-size: 30px;
   cursor: pointer;
@@ -221,6 +222,7 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 }
 
 #featured #section-title{
+  padding: 65px 0 30px 0;
   padding-left: 15px;
   display: flex;
   align-items: center;
@@ -267,8 +269,50 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 }
 
 /* Merchandise ( or "Merch")section*/
+#merch{
+  background-color: #94a9c2;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#merch #heading-section{
+  width: 100%;
+  height: 120px;
+  background-color: #b4c8ca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 20px 0;
+  margin: 0 0 20px 0;
+  color: white;
+}
 
+/* product banners for merch*/
+#merch-container{
+  width: 80%;
+  height: 400px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-banner{
+  height: 160px; /* keep same for all */
+  background-color: #ffcfcf;
+}
+
+.product-banner.long{
+  width: 100%;
+}
+
+.product-banner.short{
+  width: 30%;
+  height: 200px;
+}
 /* Responsive Design*/
 @media(max-width: 899px){ 
   #navigation ul{
