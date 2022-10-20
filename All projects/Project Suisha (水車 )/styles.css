@@ -15,6 +15,12 @@ body{
   
 }
 
+h1{
+  font-family: 'Anybody', cursive;
+  font-weight: 400;
+  font-size: 40px;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -179,7 +185,7 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 
 #About-us #heading{
   margin:0;
-  padding:0;
+  padding-top:25px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -260,6 +266,9 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   height:280px;
 }
 
+/* Merchandise ( or "Merch")section*/
+
+
 /* Responsive Design*/
 @media(max-width: 899px){ 
   #navigation ul{
@@ -297,7 +306,7 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 }
 
 @media(max-width: 600px){
-  #navigation #title h3 div{
+  #navigation #title h3 div, #navigation #title h3 a{
   z-index: 1;
   }
 }
