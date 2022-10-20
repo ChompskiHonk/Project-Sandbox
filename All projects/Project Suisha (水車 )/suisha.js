@@ -115,3 +115,4 @@ function setPositionByIndex() {
 function setSliderPosition() {
   banContainer.style.transform = `translateX(${currentTranslate}px)`
 }
+/* other stuff :3 */
