@@ -325,7 +325,7 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   align-self: flex-end;
   background-color: rgba(0,0,0,0.6);
   color: rgba(255, 255, 255, 0.9);
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   transform: scale(1, 0);
 }
 
@@ -337,7 +337,9 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   color: #ce5c49;
 }
 
-.product-banner #product-text span#LostGirl
+.product-banner #product-text span#CarePackage{
+  color: #2e8dea;
+}
 
 .product-banner:hover #product-text{
     transform: scale(1,1);
@@ -360,10 +362,26 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 .product-banner#CarePackageCap{
   background-color: #dedfda;
   background-image: url(https://static.wixstatic.com/media/275f63_dc622bf9122347459276d24a61ceee13~mv2.png/v1/fill/w_420,h_560,al_c,q_90,usm_0.66_1.00_0.01/275f63_dc622bf9122347459276d24a61ceee13~mv2.webp);
-  background-size: 75%;
+  background-size: 55%;
   background-position: center;
   background-repeat: no-repeat;
   
+}
+
+.product-banner#Care-Package-shortSleeve{
+  background-color: #dedfda;
+  background-image: url(https://static.wixstatic.com/media/275f63_b78d4ac24c624db980e123e7e69ca5be~mv2.jpg/v1/fill/w_315,h_420,al_c,q_85,usm_0.66_1.00_0.01/275f63_b78d4ac24c624db980e123e7e69ca5be~mv2.webp);
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-banner#Care-Package-Shorts{
+  background-color: #dedfda;
+  background-image: url(https://static.wixstatic.com/media/275f63_941af3efd0ea4495a5870df7a58c390f~mv2.png/v1/fill/w_520,h_390,al_c,q_90,usm_0.66_1.00_0.01/275f63_941af3efd0ea4495a5870df7a58c390f~mv2.webp);
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* Responsive Design*/
 @media(max-width: 899px){ 
