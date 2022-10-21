@@ -290,6 +290,25 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   color: white;
 }
 
+#merch #heading-section h1{
+  font-weight: bold;
+}
+
+#merch #heading-section p{
+  padding: 0 40px;
+}
+
+#merch #heading-section p a{
+  color: #d286aa;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#merch #heading-section p a:hover{
+  color: pink;
+}
+
+
 /* product banners for merch*/
 #merch-container{
   width: 80%;
