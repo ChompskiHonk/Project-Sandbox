@@ -1,173 +1,108 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Sandbox</title>
-    <link rel="stylesheet" href="smokinsexystyle.css">
+    <title>Suisha 水車|Home</title>
+  <!-- Title is Japanese for Water Wheel (well according to google trnaslate)-->
     <script src="https://kit.fontawesome.com/985d935cd4.js"></script>
-
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <i class="fa-brands fa-connectdevelop"></i>
-        <div id="header-nav">
-            <a href="#" class="active">Projects</a>
-            <a href="#" >Home</a>
-            <a href="https://github.com/ChompskiHonk" >GitHub</a>
-            <a href="https://www.linkedin.com/in/robert-andrews-746897204/" >LinkedIn</a>
-            <a href="#" id="close"><i class="fas fa-xmark"></i></a>
-        </div> 
-        <div id="mobile">
-            <i id="bars" class="fas fa-outdent"></i>
-        </div>
+  <div id="navigation">
+    <div id="title">
+      <h3><div id="icon" class="jap">水車</div ><a href="#banner" id="pronuciation">|Suisha</a></h3>
+      <!--Make an original svg using some application and put it somewhere on the right side of the nav bar...-->
     </div>
+    <ul>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#About-us">About us</a></li>
+      <li><a href="#merch">Merch</a></li>
+      <li>Comming Soon</li>
+      <li>Contacts</li>
+      <i id="done" class="fa-solid fa-xmark"></i>
+    </ul>
+    
+    <i id="responsive-part" class="fa-solid fa-bars"></i>
+  </div>
+  <!-- EXPERIMENTAL BANNER: -->
+    <div id="banner-experiment">
+      <div id="banner">
+    
+        <!-- Add an image slider here-->
+        <div class="ban" id="i-1"></div>
+        <div class="ban" id="i-2"></div>
+        <div class="ban" id="i-3"></div>
+      </div>
+    </div>
+  <div id="About-us">
+    <div id="heading">
+       <h2>What is Suisha?</h2>
+    </div>
+    <div id="a-few-words">
+      <!--Warning: This "Anybody" font gets weird when trying to use the double quotes (""), it only shows them as single quotes ('') on the webpage...-->
+      <div id="desc">
+       <p><span>水車</span>, or <span>Shisha</span>, is the japanese word for <span>''Water Wheel''</span>.The name come from the desire to create shows and movies that display smooth 2D animations as fluidly and naturally as water moves. 
+      <br><br>
+      They idea behind naming the company after a water wheel come from how looping animations usually operate; as a forward motion of frames that are shown one after the other, always repeating the cycle, the same way water wheels were built to continuously spin vy cathing falling or flowing water to create energy.
+         
+      </p> 
+    </div>
+    <div id="goal">
+      <p>
+        Our goal is to tell great stories and supply them with beautiful art, animation and music. We want to entertain others not unlike how anime as a whole has provided comfort, relative experiences and joy in general. 
+      </p>
+    </div>
+      
+    </div>
+    
+    
+    
+  </div>
+  <div id="featured">
+    <div id="section-title"><h2>Featured</h2></div> 
+    <div id="anime-lineup">
+      <a href="https://www.youtube.com/watch?v=DHJoX15_uk0"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/baff3564-c647-448a-a414-7c3c7cc461fe/dee1rsa-c3f0f515-e015-4b4b-ab43-809d4f0e14af.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JhZmYzNTY0LWM2NDctNDQ4YS1hNDE0LTdjM2M3Y2M0NjFmZVwvZGVlMXJzYS1jM2YwZjUxNS1lMDE1LTRiNGItYWI0My04MDlkNGYwZTE0YWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VdcobmxkduoTm-MV8jxes99Mie_nEW_LLjlaay4fgxA" alt="ShinjiAdventures poster"><div id="tooltip" >Watch Shinji's Adventures Now!</div></a>
+        
+      
+      <a href="https://www.youtube.com/watch?v=TBO9ANTBCjM"><img src="https://m.media-amazon.com/images/M/MV5BM2ZiY2IxZjgtNGVlMi00ZTQ5LTk4N2EtZDgwNDdkNjU0MWZhXkEyXkFqcGdeQXVyMTEzOTI1NTc1._V1_FMjpg_UX1000_.jpg" alt="SpongeBob anime poster"><div id="tooltip" >Watch Spongebob: Bubble Bass Arc!</div></a>
+      
+      <a href="https://www.youtube.com/watch?v=1JKLM45aIik&t=566s"><img src="https://external-preview.redd.it/jkrLkxqRqIztDXYRAj3pZ_262uLS95bvH0X9rZb1eMo.jpg?auto=webp&s=a512e88c763b0d9d90c33316fc3ea66d88261c70" alt="Legend: A Dragonball tale poster"><div id="tooltip" >Watch Legend: A Dragon Ball Tale now!</div></a>
+      
+      <a href="https://www.youtube.com/watch?v=4c_ORJHJXgI"><img src="https://pics.filmaffinity.com/Batman_Broken_Promise_S-750457014-large.jpg" alt="Batman: Broken Promises poster"><div id="tooltip" >Watch Batman: Broken Promises now!</div></a>
+      </div>
+    
+    
+    
+  </div>
+  <div id="merch">
+    <!-- Will beng adding items and links from this site: https://www.noticemesenpai.store/shop-->
+    <div id="heading-section">
+      <div id="secton-title"><h1>Merchandise</h1></div>
+      <p>Although this site may only be a fake company just to emmulate the website of an animation studio, the merch below is very real! <a href="https://www.noticemesenpai.store/shop">Click here</a> to see more.</p>
+    </div> 
+    <div id="merch-container">
+      <a id="LostGirlHoodie" class="product-banner long" href="https://www.noticemesenpai.store/product-page/copy-of-lost-girl-hoodie"><p id="product-text" >Like the art? Get it on a  <span id="LostGirl">hoodie</span><span id="here">here</span>.</p></a>
+      <a id="CarePackageCap" class="product-banner short" href="https://www.noticemesenpai.store/product-page/care-package-dad-hat"> <p id="product-text" >Get a  <span id="CarePackage">Care Package Hat</span> <span>here</span>.</p></a>
+      <a class="product-banner short"><p id="product-text"></p></a>
+      <a class="product-banner short"><p id="product-text"></p></a>
+    </div>
+    
+    
+  </div>
 
-        <div class="main-proj-board">
-            <div class="proj-board-pos">
-                <div class="project-title"><h1>Projects</h1></div>
-                <div class="project-options">
-                    <!-- Each One will have an OnClick javaScript command 
-                    to show certain projects based on their status-->
-                    <div class="active option" id="all">All</div>
-                    <div class="option" id="finished">Finished</div>
-                    <div class="option" id="incomplete">Incomplete</div>
-                    <div class="option" id="immitation">Imitations</div>
-                    <div class="option" id="abandoned">Abandoned</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-section">
-            <h3>Features all the projects that I have worked on as of January 2021.</h3>
-            
-            <div class="project-container">
-
-                <div class="proj all finished">
-                    <a href="All projects/CSSS Color Markers/index.html">
-                        <img src="Project Images/CSSMarkers.png" alt="CSS Markers">
-                        <div class="proj-des">
-                            <div class="proj-des-name">CSS Color Markers</div>
-                            <div class="proj-des-text" >
-                                <p>A website that emphasized using css to display art using various shapes and colors.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="proj all finished">
-                    <a href="All projects/Registration Form/index.html">
-                        <img src="Project Images/RegistrationForm.png" alt="Registration Form">
-                        <div class="proj-des">
-                            <div class="proj-des-name">Registration forms</div>
-                            <div class="proj-des-text" >
-                                <p>An example registration form using html and css.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="proj all finished">
-                    <a href="All projects/FollowAlongEcommerceSite/EcomHome.html">
-                        <img  src="Project Images/CaraEcommerce.png" alt="Cara">
-                        <div class="proj-des">
-                            <div class="proj-des-name">Cara</div>
-                            <div class="proj-des-text" >
-                                <p>A customized follow along project that replicatres and e-cmmerce website.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                 <div class="proj all finished abandoned">
-                    <a href="https://chompskihonk.github.io/qcFirst-Web/">
-                        <img  src="Project Images/qcFirst1.PNG" alt="qcFirst1">
-                        <div class="proj-des">
-                            <div class="proj-des-name">qcFirst</div>
-                            <div class="proj-des-text" >
-                                <p>A website that was developed in 2021 to resemble a mix between "cunyFirst" and the Queens College website. It is in dire need of an upgrade...</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="proj all finished abandoned">
-                    <a href="https://chompskihonk.github.io/web_qcfirst/">
-                        <img  src="Project Images/qcFirst2.PNG" alt="qcFirst2">
-                        <div class="proj-des">
-                            <div class="proj-des-name">Web-qcFirst</div>
-                            <div class="proj-des-text" >
-                                <p>The second and final version of the website that I worked on with my partner in college. Both of these sites will be revisited in the future...</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="proj all incomplete immitation abandoned">
-                    <a href="All projects/Recreating Amazon/index.html">
-                        <div class="img-background-amazon">
-                            <img class="amazon" src="Project Images/Amazonlogo.png" alt="Amazon Logo">
-                            <p>(the clone)</p>
-                        </div>
-                        <div class="proj-des">
-                            <div class="proj-des-name">Amazon Imitation</div>
-                            <div class="proj-des-text" >
-                                <p>This is an attempt to recreate Amazon's homepage for the sake of improving my front-end development skills.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="proj all incomplete immitation">
-                    <a href="All projects/Yale Medicine Design Study/MainPage.html">
-                        <div class="img-background-Yale">
-                            <span class="Yalelogo"><b>Yale</b>Medicine</span>
-                            <p>(the clone)</p>
-                        </div>
-                        <div class="proj-des">
-                            <div class="proj-des-name">Yale Imitation</div>
-                            <div class="proj-des-text" >
-                                <p>This is an attempt to recreate one of Yale's Article pages in the medical field.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="proj all finished ">
-                    <a href="All projects/Counting Stray Sheep (Based on Catherine)/index.html">
-                        <div class="img-background-StraySheep">
-                            <img id="StraySheep" src="Project Images/BetterStraySheepLogo.png" alt="Stray Sheep Logo">
-                            
-                        </div>
-                        <div class="proj-des">
-                            <div class="proj-des-name">Counting Stray Sheep</div>
-                            <div class="proj-des-text" >
-                                <p>This project is a counting page with customized CSS art and animations inspired by the indie-game classic, <i>"Catherine"</i>.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="proj all finished ">
-                    <a href="All projects/Color Switch/index.html">
-                        <div class="img-background-ColorSwitch">
-                            <img id="ColorSwitchPic" src="Project Images/image_2022-08-20_111854072.png" alt="Color Switch Picture">
-                            
-                        </div>
-                        <div class="proj-des">
-                            <div class="proj-des-name">Color Switch</div>
-                            <div class="proj-des-text" >
-                                <p>This project is a page that lets you change the page's background color property to a random one.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-            </div>
-            
-        </div>
-        <script src="Action.js"></script>
+  <div id="CommingSoon">
+    
+  </div>
+  
+  <div id="contact-us">
+    
+  </div>
 </body>
+  
 </html>
