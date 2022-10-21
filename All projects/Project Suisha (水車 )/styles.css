@@ -302,8 +302,10 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 
 .product-banner{
   height: 160px; /* keep same for all */
-  background-color: #ffcfcf;
+  background-color:#dedfda;
   display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .product-banner.long{
@@ -351,37 +353,30 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
 }
 
 .product-banner#LostGirlHoodie{
-  background-color: #dedfda;
   background-image: url(https://static.wixstatic.com/media/275f63_a51e41cdd6e14b84b0419471f74e64dd~mv2.jpg/v1/fill/w_560,h_560,al_c,q_85,usm_0.66_1.00_0.01/275f63_a51e41cdd6e14b84b0419471f74e64dd~mv2.webp);
   background-size: 40%;
-  background-position: center;
-  background-repeat: no-repeat;
+  
   
 }
 
 .product-banner#CarePackageCap{
-  background-color: #dedfda;
   background-image: url(https://static.wixstatic.com/media/275f63_dc622bf9122347459276d24a61ceee13~mv2.png/v1/fill/w_420,h_560,al_c,q_90,usm_0.66_1.00_0.01/275f63_dc622bf9122347459276d24a61ceee13~mv2.webp);
   background-size: 55%;
-  background-position: center;
-  background-repeat: no-repeat;
+  
   
 }
 
 .product-banner#Care-Package-shortSleeve{
-  background-color: #dedfda;
   background-image: url(https://static.wixstatic.com/media/275f63_b78d4ac24c624db980e123e7e69ca5be~mv2.jpg/v1/fill/w_315,h_420,al_c,q_85,usm_0.66_1.00_0.01/275f63_b78d4ac24c624db980e123e7e69ca5be~mv2.webp);
   background-size: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
+  
 }
 
 .product-banner#Care-Package-Shorts{
   background-color: #dedfda;
   background-image: url(https://static.wixstatic.com/media/275f63_941af3efd0ea4495a5870df7a58c390f~mv2.png/v1/fill/w_520,h_390,al_c,q_90,usm_0.66_1.00_0.01/275f63_941af3efd0ea4495a5870df7a58c390f~mv2.webp);
   background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
+  
 }
 /* Responsive Design*/
 @media(max-width: 899px){ 
