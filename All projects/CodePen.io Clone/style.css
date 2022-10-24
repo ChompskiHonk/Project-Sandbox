@@ -126,6 +126,8 @@ i#cog{
   height: 100%;
   width: 33.33%;
   background-color: #1d1e22;
+  color: white;
+  border: none;
 }
 
 #html-div{
@@ -138,6 +140,4 @@ i#cog{
   height:50%; /* both sections will satrt off at 50% height, but it will change later...*/
   background-color: #FFF;
 }
-
-
 
