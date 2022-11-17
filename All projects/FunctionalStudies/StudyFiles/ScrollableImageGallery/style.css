@@ -1,7 +1,37 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+/* imported stuff above added per the reccomendation of a mister Kevin Powell aka CSS GOD NO KIZZY
+
+It most likely isn't necessary, I will experiemnt with the project later to see if that is indeed the case...
+
+btw the video this is based on can be found at here: 
+https://www.youtube.com/watch?v=3yfswsnD2sw&t=89s*/
+
 body{
   background-color: #71a0a8;
+  color: #fff;
 }
 
-/* CSS for Scrollable content START*/
 
-/* CSS for Scrollable content END*/
+
+/* CSS for Scrollable Functionality START*/
+.scrollable-content{
+  /* size */
+  width: 500px; /* adjusts width;use as you see fit or comment it out to remove its effect*/
+  /*height: 700px;  adjusts heightuse as you see fit or comment it out to remove its effect*/
+  
+  /* meat and potatoes */
+  display: grid;
+  gap:var(--size-3); /* adjusts gap inbetween objects; can change or remove by preference*/
+  grid-auto-flow:column;
+  grid-auto-columns: 25%;  /*adjusts size of each "column"; 
+  can be removed to keep "default(-ish) size of all columns" */
+  
+  overflow-x:auto;
+  overscroll-behavior-inline: contain;
+}
+
+.scrollable-object{
+  /* Can edit for preference*/
+}
+/* CSS for Scrollable Funtionality END*/
