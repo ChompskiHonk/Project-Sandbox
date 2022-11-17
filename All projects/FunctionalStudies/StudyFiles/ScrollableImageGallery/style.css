@@ -32,6 +32,19 @@ body{
 }
 
 .scrollable-object{
-  /* Can edit for preference*/
+  /* Can edit for preference
+  display: grid;
+  grid-tempalate-rows: min-content;
+  gap: var(--size-2);
+  padding: var(--size-3);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  */
+}
+
+.scrollable-object > img{
+  inline-size: 100%; /* can be commented out for preference*/
+  /*aspect-ratio: 10 / 12; adjusts ratio of all images in an oject; can be used for preference or commented out*/
+  object-fit: cover;
 }
 /* CSS for Scrollable Funtionality END*/
