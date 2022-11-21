@@ -1,9 +1,7 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 /* imported stuff above added per the reccomendation of a mister Kevin Powell aka CSS GOD NO KIZZY
-
 It most likely isn't necessary, I will experiemnt with the project later to see if that is indeed the case...
-
 btw the video this is based on can be found at here: 
 https://www.youtube.com/watch?v=3yfswsnD2sw&t=89s*/
 
@@ -17,14 +15,14 @@ body{
 /* CSS for Scrollable Functionality START*/
 .scrollable-content{
   /* size */
-  width: 500px; /* adjusts width;use as you see fit or comment it out to remove its effect*/
-  /*height: 700px;  adjusts heightuse as you see fit or comment it out to remove its effect*/
+  width: 600px; /* adjusts width;use as you see fit or comment it out to remove its effect*/
+  height: 400px;/*  adjusts height. use as you see fit or comment it out to remove its effect*/
   
   /* meat and potatoes */
   display: grid;
   gap:var(--size-3); /* adjusts gap inbetween objects; can change or remove by preference*/
   grid-auto-flow:column;
-  grid-auto-columns: 25%;  /*adjusts size of each "column"; 
+  grid-auto-columns: 100%;  /*adjusts size of each "column"; 
   can be removed to keep "default(-ish) size of all columns" */
   
   overflow-x:auto;
@@ -43,8 +41,16 @@ body{
 }
 
 .scrollable-object > img{
-  inline-size: 100%; /* can be commented out for preference*/
-  /*aspect-ratio: 10 / 12; adjusts ratio of all images in an oject; can be used for preference or commented out*/
+  inline-size: 50%; /* can be commented out for preference*/
+  aspect-ratio: 10 / 12;/* adjusts ratio of all images in an oject; can be used for preference or commented out*/
   object-fit: cover;
+}
+
+.snaps-inline{
+  scroll-snap-type:inline mandatory;
+}
+
+.snaps-inline > *{
+  scroll-snap-align: start;
 }
 /* CSS for Scrollable Funtionality END*/
