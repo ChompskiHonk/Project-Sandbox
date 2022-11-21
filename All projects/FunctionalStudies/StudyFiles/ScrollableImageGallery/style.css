@@ -16,7 +16,7 @@ body{
 .scrollable-content{
   /* size */
   width: 600px; /* adjusts width;use as you see fit or comment it out to remove its effect*/
-  height: 400px;/*  adjusts height. use as you see fit or comment it out to remove its effect*/
+  height:400px;/*  adjusts height. use as you see fit or comment it out to remove its effect*/
   
   /* meat and potatoes */
   display: grid;
@@ -27,6 +27,7 @@ body{
   
   overflow-x:auto;
   overscroll-behavior-inline: contain;
+  scrollbar-width: none;
 }
 
 .scrollable-object{
@@ -38,11 +39,14 @@ body{
   background: var(--surface-2);
   border-radius: var(--radius-2);
   */
+  overflow-y: hidden;
 }
 
 .scrollable-object > img{
-  inline-size: 50%; /* can be commented out for preference*/
-  aspect-ratio: 10 / 12;/* adjusts ratio of all images in an oject; can be used for preference or commented out*/
+  inline-size: 100%; /* can be commented out for preference*/
+  overflow-y: none;
+  aspect-ratio: 6 / 4;/* adjusts ratio of all images in an oject; can be used for preference or commented out*/
+  
   object-fit: cover;
 }
 
