@@ -1,1 +1,19 @@
+.scrollable-content{
+  width: 100%; /* changes width of entire gallery*/
+  height: 40rem; /* changes height of entire gallery*/
+  overflow: hidden;
+  
+}
 
+.whopper{
+  width: 400%; /*Needs to be able to hold all 100% pages
+  exmaple: 5 slides = 500%, 2 slides = 200%...*/
+  height: inherit;
+  display: flex;
+}
+
+.scrollable-object{
+  width: 100%;
+  height: 40rem;
+  object-fit:cover;
+}
