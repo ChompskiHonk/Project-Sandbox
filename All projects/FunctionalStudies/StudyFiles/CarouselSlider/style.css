@@ -25,6 +25,7 @@
 
 .scrollable-object{
   width: inherit;
+  
 }
 .scrollable-object > img{
   /* This entire this is optional, but the default assumes you only want the picture as the main slide*/
