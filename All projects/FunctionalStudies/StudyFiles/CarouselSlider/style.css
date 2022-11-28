@@ -19,19 +19,54 @@
 }
 
 .whopper{
-  width: 400%; /*Needs to be able to hold all 100% pages
+  width: 2400px; /*Needs to be able to hold all 100% pages
   exmaple: 5 slides = 500%, 2 slides = 200%...*/
   position: relative;
   display: flex;
 }
 
 .scrollable-object{
-  width: inherit;
-  
+  width: 600px;
+  display: flex;
 }
 .scrollable-object > img{
   /* This entire this is optional, but the default assumes you only want the picture as the main slide*/
-  width: 100%;
+  width: 600px;
   height: 40rem;
   object-fit:cover;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: -20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -20px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -20px;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(.8);
 }
