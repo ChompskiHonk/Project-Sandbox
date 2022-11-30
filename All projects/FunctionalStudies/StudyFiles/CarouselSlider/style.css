@@ -1,4 +1,17 @@
 /* Code based on this: https://codepen.io/m3g4p0p/pen/GRNgOWN*/
+:root{
+  --carouselwidth: 900px; /*changes the width for entire carousel*/
+  
+ --carouselheight: 30rem;
+  /*changes the height for entire carousel*/
+  
+ --numberofSlides: 400%; /*for setting the amount of space need to fit all slides (number of slides * 100%)*/
+  
+ 
+  
+  /*change either to fit additional requirements (which of course would require experiementation to gte it just right, so be warned...)*/
+  
+}
 
 body{
   margin: 0px;
@@ -6,17 +19,18 @@ body{
 
 
 #Carousel{
-  width: 100%; /*change to 100 time the number of slides if will fit the entire page (100%)*/
+  width: var(--carouselwidth);
+  height: var(--carouselheight);
   overflow: hidden;
 }
 
 #scrollable-content{
   position: relative;
-  width: 100%;
+  
 }
 
 #wrapper{
-  
+  width: var(--numberofSlides);
   display: flex;
   transform: translateX(0);
   transition: transform 1s ease;
@@ -29,5 +43,6 @@ body{
 }
 
 #scrollable-object img{
+ width: 100%;
   object-fit: cover;
 }
