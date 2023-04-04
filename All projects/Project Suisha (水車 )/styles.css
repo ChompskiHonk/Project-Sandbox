@@ -137,11 +137,16 @@ a{
 }
 #banner{
   display: flex;
-  
   width: 300vw;
   height: 400px;
   background-color: black;
   transition: transform 0.3s ease;
+}
+#banner a{
+   object-fit: cover;
+}
+#banner a img{
+  object-fit: cover;
 }
 #i-1{
   background-color: #1d1e22;
@@ -430,6 +435,16 @@ IT IS NOT OFFICAL CODE TOBE PUT IN*/
   
   #featured a img{
     height:480px;
+  }
+}
+
+@media(max-width: 960px){
+  #featured div#anime-lineup{
+    wrap: no-wrap;
+  }
+  #featured div#anime-lineup a, #featured div#anime-lineup a img{
+    width: 100%;
+    height: 100%;
   }
 }
 
