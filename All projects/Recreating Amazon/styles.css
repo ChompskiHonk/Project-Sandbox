@@ -169,7 +169,7 @@ body{
  
 }
 /* Featured Categories section*/
-.Featured-Categories{
+#Featured-Categories{
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
@@ -177,29 +177,35 @@ body{
   background-color:#232f3e;
 }
 
-.Featured-Categories a{
+#Featured-Categories a{
     display: flex;
     text-decoration: none;
     color: white;
     font-size: 13px;
     font-weight: bold;
     padding-top: 7px;
+    
+}
+
+#Featured-Categories a:hover{
+  background-color: white;
+  color: #232f3e;
 }
 
 /*As the width of the page decreases, the ammount of shopping options under the nav bar should decrease as well, this is probably done with JavaScript...*/
-.Featured-Categories .all{
+#Featured-Categories .all{
   display: block;
 }
 
-.Featured-Categories .all i{
+#Featured-Categories .all i{
   margin-right: 4px;
 }
 
-.Featured-Categories .prime{
+#Featured-Categories .prime{
   display: block;
 }
 
-.Featured-Categories .prime i{
+#Featured-Categories .prime i{
   margin-left: 3px;
   opacity: 0.7;
 }
@@ -336,5 +342,11 @@ body{
 
 #imgbox-3-1{
   background-image: url('https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AMAZON_FASHION/2022/journeys/MTcwYjYxZDQt/MTcwYjYxZDQt-N2Q3MzJmODUt-w379._SY304_CB630082778_.jpg');
-}
-
+  
+  /* Responsive Design*/
+  @media (max-width: 1449px){
+    #info-box.four-boxType #picturelinks div{
+      width: 76px;
+      height: 77px;
+     }
+  }
